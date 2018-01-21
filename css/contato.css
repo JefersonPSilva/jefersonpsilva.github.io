@@ -1,3 +1,4 @@
 .menu-opcoes ul li{
 	text-transform: capitalize;
+	display: inline;
 }
