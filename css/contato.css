@@ -1,3 +1,4 @@
+/*
 .menu-opcoes ul li{
 	text-transform: capitalize;
 	display: inline;
@@ -5,6 +6,13 @@
 	float: left;
 	position: relative;
 	width: auto;
+}
+.menu-opcoes header {
+	width:100%;
+	height:20%; //your desired height
+	position:absolute;
+	top:0;
+	left:0;
 }
 
 .menu-opcoes a {
@@ -25,3 +33,4 @@
 .menu-opcoes li:hover a {
 	background: #000000;
 }
+*/
