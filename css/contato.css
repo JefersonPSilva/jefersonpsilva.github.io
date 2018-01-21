@@ -1,4 +1,27 @@
 .menu-opcoes ul li{
 	text-transform: capitalize;
 	display: inline;
+	background: gray;
+	float: left;
+	position: relative;
+	width: auto;
+}
+
+.menu-opcoes a {
+	background: #30A6E6;
+	color: #FFFFFF;
+	display: block;
+	font: bold 12px/20px sans-serif;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+
+.menu-opcoes li:hover a {
+	background: #000000;
 }
