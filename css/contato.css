@@ -1,28 +1,12 @@
-/*
-.menu-opcoes ul li{
-	text-transform: capitalize;
-	display: inline;
-	background: gray;
-	float: left;
-	position: relative;
-	width: auto;
-}
-.menu-opcoes header {
-	width:100%;
-	height:20%; //your desired height
-	position:absolute;
-	top:0;
-	left:0;
-}
-
 .menu-opcoes a {
-	background: #30A6E6;
+  	background: #30A6E6;
 	color: #FFFFFF;
 	display: block;
 	font: bold 12px/20px sans-serif;
 	padding: 10px 25px;
 	text-align: center;
 	text-decoration: none;
+	text-transform: capitalize;
 	-webkit-transition: all .25s ease;
 	-moz-transition: all .25s ease;
 	-ms-transition: all .25s ease;
@@ -30,7 +14,30 @@
 	transition: all .25s ease;
 }
 
-.menu-opcoes li:hover a {
-	background: #000000;
+.menu-opcoes a:hover, a:active {
+  background-color: #000000;
+  color: #FFFFFF;
+  text-decoration: none;
 }
-*/
+
+.menu-opcoes a:link, a:visited{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.navbar-menu {
+  background-color: #30A6E6;
+  margin: 2% auto;
+  max-width: 1000px;
+  width: calc(100%);
+}
+
+.navbar-menu .menu {
+  display: block;
+  text-align: center;
+  background: #30A6E6;
+}
+
+.navbar-menu .menu li {
+  display: inline-block;
+}
