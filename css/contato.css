@@ -1,10 +1,10 @@
 #cabecalho{
-	background-color: #000;
+	background-color: #535c68;
 	height: 90%;
 }
 
 #menu{
-	background-color: red;
+	background-color: #30336b;
 	height: auto;
 }
 
@@ -30,4 +30,16 @@
 	height: 100%;
 	margin: 0px;
 	padding: 0px;
+}
+
+/*FONTE MENU*/
+
+.btn-menu{
+    transition: ease .5s;
+	-webkit-transition: ease .5s;
+    -moz-transition: ease .5s;
+}
+.btn-menu:hover{
+    border-radius: 50px;
+    color: #000;
 }
