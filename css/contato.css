@@ -8,22 +8,16 @@
 	height: auto;
 }
 
-#contato{
+#sobre{
+	background-color: #DC4F49;
+	height: auto;
+	padding: 50px 30px;
+}
+
+#experiencia{
 	background-color: blue;
-	height: 450px;
+	height: 550px;
 	padding: 20px 30px;
-}
-
-.textoBanner{
-	width: 100%;
-	border: 1px solid #FFFFFF;
-	padding: 30px 0 30px;
-}
-
-.textoBanner > *{
-	font-family: 'Open Sans', sans-serif;
-	font: bold 25px sans-serif;
-	color: #FFFFFF
 }
 
 #menuNavBar{
@@ -32,14 +26,86 @@
 	padding: 0px;
 }
 
-/*FONTE MENU*/
-
-.btn-menu{
-    transition: ease .5s;
-	-webkit-transition: ease .5s;
-    -moz-transition: ease .5s;
+.textoBanner{
+	width: 100%;
+	border: 1px solid #FFFFFF;
+	padding: 30px 0 30px;
 }
-.btn-menu:hover{
-    border-radius: 50px;
-    color: #000;
+
+/*Tecnica para rolagem do menu*/
+.navMenuFixa {
+	position: -webkit-sticky;
+	z-index: 1;
+	background-color: #e7e7e7;
+}
+.navFixa {
+	position: fixed;
+	width: 100%;
+    padding: 15px 0;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	border-top: 0;
+    -moz-transition: padding .3s ease-in;
+    -o-transition: padding .3s ease-in;
+    -webkit-transition: padding .3s ease-in;
+    transition: padding .3s ease-in;
+}
+
+.titulo{
+	text-transform: uppercase;
+	margin-top: 50px;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font: bold 30px sans-serif;
+	color: #FFFFFF;
+}
+
+.subtitulo{
+	font-family: 'Open Sans', sans-serif;
+	font: bold 25px sans-serif;
+	color: #FFFFFF;
+}
+
+.fonteGrandePadrao{
+	font-family: 'Open Sans', sans-serif;
+	font: bold 25px sans-serif;
+	color: #FFFFFF;
+}
+
+.fonteMediaPadrao{
+	font-family: 'Open Sans', sans-serif;
+	font: bold 20px sans-serif;
+	color: #FFFFFF;
+}
+
+.fontePequenaPadrao{
+	font-family: 'Open Sans', sans-serif;
+	font: bold 15px sans-serif;
+	color: #FFFFFF;
+}
+
+.recuo{
+	text-indent:4em
+}
+
+.texto-informacao{
+	color: #FFFFFF;
+	margin: 10px 15px;
+}
+
+.bloco-texto{
+	border: 1px solid #FFFFFF;
+    color: #424242;
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+ 	letter-spacing:0.1em;
+	margin: 40px auto;
+ 	line-height: 145%;
+ 	font-size: 14pt;
+ 	font-variant: small-caps;
+}
+
+.img-itsme{
+	margin: 40px auto;
+	align-items: center;	
 }
