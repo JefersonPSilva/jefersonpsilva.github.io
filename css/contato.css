@@ -20,7 +20,7 @@ blockquote{
 }
 
 #experiencia{
-	background-color: blue;
+	background-color: #40739e;
 	height: 100%;
 	padding: 20px 30px;
 }
@@ -31,10 +31,10 @@ blockquote{
 }
 
 .textoBanner{
-	margin-top: 25%;
 	width: 100%;
 	border: 1px solid #FFFFFF;
 	padding: 30px 100px 30px;
+	display: block;
 }
 
 
@@ -65,4 +65,12 @@ blockquote{
  	font-variant: small-caps;
  	text-align: justify;
  	text-indent: 4em;
+}
+
+.vAlign{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
 }
