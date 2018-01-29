@@ -23,6 +23,8 @@ blockquote{
 	background-color: #40739e;
 	height: 100%;
 	padding: 20px 30px;
+	height: 100%;
+	display: table;
 }
 
 #menu ul li a, #menu a{
@@ -53,6 +55,10 @@ blockquote{
 	font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
     color: #FFFFFF;
     font-size: 20pt;
+}
+
+#sobre h4, .fa, #sobre span{
+	color: #FFFFFF;
 }
 
 .texto-informacao{
