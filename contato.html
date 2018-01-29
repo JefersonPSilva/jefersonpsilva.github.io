@@ -22,48 +22,50 @@
 		<script src="js/html5shiv.js"></script>
 	<![endif]-->
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50" id="home">
 	<div class="container-fluid">
 		<header>
 			<div class="row" id="cabecalho">
 				<div class="col-md-3 col-sm-3 col-xl-3 col-lg-3"></div>
 				<div class="col-md-6 col-sm-6 col-xl-6 col-lg-6">
 					<!--Manter texto alinhado no centro-->
-					<div class="row" style="height: 25%"></div>
+					<div class="row"></div>
 					<div class="row">
 						<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
 							<div class="textoBanner">
-								<h1 class="text-center fonteGrandePadrao">Jeferson P. da Silva</h1>
-								<h2 class="text-center fonteGrandePadrao">Desenvolvedor Web PHP Júnior / Java Web Júnior / Fron-End Júnior</h2>
+								<h1 class="text-center titulo">Jeferson P. da Silva</h1>
+								<h2 class="text-center subtitulo">Desenvolvedor Web PHP Júnior / Java Web Júnior / Fron-End Júnior</h2>
 							</div>	
 						</div>
 					</div>
-					<div class="row" style="height: 25%"></div>
+					<div class="row"></div>
 				</div>
 				<div class="col-md-3 col-sm-3 col-xl-3 col-lg-3"></div>
 			</div>
 			<div class="row" id="menu">
-				<nav class="navbar navbar-default navegacao">
+				<nav class="navbar navbar-inverse navbar-fixed-top">
 				  	<div class="container-fluid">
 					    <div class="navbar-header">
-					      	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menuNavBar">
-						        <span class="icon-bar"></span>
-						        <span class="icon-bar"></span>
-						        <span class="icon-bar"></span> 
+					        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menuNavBar">
+					          	<span class="icon-bar"></span>
+					          	<span class="icon-bar"></span>
+					          	<span class="icon-bar"></span>                        
 					      	</button>
-					      	<a class="navbar-brand" href="#">Menu</a>
+					      	<a class="navbar-brand" href="#">Portfólio</a>
 					    </div>
-					    <div class="collapse navbar-collapse navMenuFixa fonteGrandePadrao" id="menuNavBar">
-						    <ul class="nav navbar-nav">
-						        <li class="text-center"><a href="#" class="scrollSuave">Home</a></li>
-						        <li class="text-center"><a href="#sobre" class="scrollSuave">Sobre</a></li>
-						        <li class="text-center"><a href="#experiencia" class="scrollSuave">Experiências</a></li> 
-						        <li class="text-center"><a href="#" class="scrollSuave">Conhecimentos</a></li> 
-						        <li class="text-center"><a href="#" class="scrollSuave">Contato</a></li> 
-						    </ul>
+					    <div>
+					      	<div class="collapse navbar-collapse" id="menuNavBar">
+						        <ul class="nav navbar-nav">
+						          	<li><a href="#home" class="scrollSuave">Home</a></li>
+						          	<li><a href="#sobre" class="scrollSuave">Sobre</a></li>
+						          	<li><a href="#experiencia" class="scrollSuave">Experiência</a></li>
+						          	<li><a href="" class="scrollSuave">Conhecimentos</a></li>
+						          	<li><a href="" class="scrollSuave">Contato</a></li>
+						        </ul>
+					      	</div>
 					    </div>
 				  	</div>
-				</nav>
+				</nav> 
 			</div>
 		</header>
 		<main>
@@ -73,19 +75,23 @@
 						<img src="img/eu.png" width="200px" height="200px" class="img-thumbnail img-responsive center-block" alt="Foto Jeferson Pereira">
 					</div>
 					<div class="col-md-8 col-sm-8 col-xl-8 col-lg-8">
-						<article class="bloco-texto">
+						<article>
 							<p class="titulo">Sobre</p>
-							<hgroup>
-								<h2 class="fonteMediaPadrao">Jeferson Pereira</h2>
-								<h3 class="fonteMediaPadrao">Desenvolvedor Web PHP Júnior / Java Web Júnior / Fron-End Júnior</h3>
+							<hgroup class="subtitulo">
+								<h2>Jeferson Pereira</h2>
+								<h3>Desenvolvedor Web PHP Júnior / Java Web Júnior / Fron-End Júnior</h3>
 							</hgroup>
 							<aside>
-								<p class="recuo texto-informacao fontePequenaPadrao">
-									Tenho 23 anos, sou solteiro, e apaixonado por desenvolvimento e tecnologia, desenvolvedor júnior, tenho dois anos de experiência com desenvolvimento, e a quatro anos trabalho na aréa de tecnologia, já participei do desenvolvimento de sistema ERP, Web é Geoprocessamento de dados, além de alguns projetos para faculdade, cursos.
+								<p class="texto-informacao">
+									Tenho 23 anos, sou solteiro, e apaixonado por desenvolvimento e tecnologia, desenvolvedor júnior, tenho dois anos de experiência com desenvolvimento, e a quatro anos trabalho na aréa de tecnologia da informação, já participei do desenvolvimento de sistema ERP, WEBs é Geoprocessamento de dados, além de alguns projetos para faculdade é cursos realizados, estudante do Curso de Ciência da Computação.
 								</p>
-								<p class="recuo texto-informacao fontePequenaPadrao">
-									Assim como a tecnologia sempre estou buscando me atualizar e adiquirir mais conhecimento.
+								<p class="texto-informacao">
+									Assim como a tecnologia sempre estou me atualizando e adiquirindo mais conhecimento.
 								</p>
+								<blockquote class="blockquote">
+									  	<p class="mb-0">Nunca me chamaram de um cara legal. Estou em algum lugar entre os geeks e normais.</p>
+									  	<footer class="blockquote-footer">Linus Torvalds.<!--<cite title="Fonte Titulo">Fonte Titulo</cite>--></footer>
+								</blockquote>
 							</aside>
 						</article>
 					</div>

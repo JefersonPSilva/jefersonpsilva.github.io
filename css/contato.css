@@ -1,111 +1,68 @@
-#cabecalho{
-	background-color: #535c68;
-	height: 90%;
+/*Bootstrap scrollspy plugin*/
+body {
+    position: relative; 
 }
 
-#menu{
-	background-color: #30336b;
-	height: auto;
+blockquote{
+	color: #FFFFFF;
+}
+
+#cabecalho{
+	background-color: #535c68;
+	height: 100%;
 }
 
 #sobre{
-	background-color: #DC4F49;
-	height: auto;
+	background-color: #273c75;
+	height: 100%;
 	padding: 50px 30px;
+	display: table;
 }
 
 #experiencia{
 	background-color: blue;
-	height: 550px;
+	height: 100%;
 	padding: 20px 30px;
 }
 
-#menuNavBar{
-	height: 100%;
-	margin: 0px;
-	padding: 0px;
+#menu ul li a, #menu a{
+	font-size: 20pt;
+	font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
 }
 
 .textoBanner{
+	margin-top: 25%;
 	width: 100%;
 	border: 1px solid #FFFFFF;
-	padding: 30px 0 30px;
+	padding: 30px 100px 30px;
 }
 
-/*Tecnica para rolagem do menu*/
-.navMenuFixa {
-	position: -webkit-sticky;
-	z-index: 1;
-	background-color: #e7e7e7;
-}
-.navFixa {
-	position: fixed;
-	width: 100%;
-    padding: 15px 0;
-	left: 0;
-	top: 0;
-	z-index: 100;
-	border-top: 0;
-    -moz-transition: padding .3s ease-in;
-    -o-transition: padding .3s ease-in;
-    -webkit-transition: padding .3s ease-in;
-    transition: padding .3s ease-in;
-}
-
-.titulo{
-	text-transform: uppercase;
-	margin-top: 50px;
-	text-align: center;
-	font-family: 'Open Sans', sans-serif;
-	font: bold 30px sans-serif;
-	color: #FFFFFF;
-}
-
-.subtitulo{
-	font-family: 'Open Sans', sans-serif;
-	font: bold 25px sans-serif;
-	color: #FFFFFF;
-}
-
-.fonteGrandePadrao{
-	font-family: 'Open Sans', sans-serif;
-	font: bold 25px sans-serif;
-	color: #FFFFFF;
-}
-
-.fonteMediaPadrao{
-	font-family: 'Open Sans', sans-serif;
-	font: bold 20px sans-serif;
-	color: #FFFFFF;
-}
-
-.fontePequenaPadrao{
-	font-family: 'Open Sans', sans-serif;
-	font: bold 15px sans-serif;
-	color: #FFFFFF;
-}
-
-.recuo{
-	text-indent:4em
-}
-
-.texto-informacao{
-	color: #FFFFFF;
-	margin: 10px 15px;
-}
-
-.bloco-texto{
-	border: 1px solid #FFFFFF;
-    color: #424242;
-    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
- 	letter-spacing:0.1em;
-	margin: 40px auto;
- 	line-height: 145%;
- 	font-size: 14pt;
- 	font-variant: small-caps;
-}
 
 .img-itsme{
 	margin: 40px auto;
 	align-items: center;	
+}
+
+.titulo{
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+    color: #FFFFFF;
+    font-size: 35pt;
+}
+
+.subtitulo, .subtitulo h2, .subtitulo h3	{
+	font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+    color: #FFFFFF;
+    font-size: 20pt;
+}
+
+.texto-informacao{
+    color: #FFFFFF;
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+ 	letter-spacing:0.1em;
+	margin: 20px auto;
+ 	line-height: 145%;
+ 	font-size: 12pt;
+ 	font-variant: small-caps;
+ 	text-align: justify;
+ 	text-indent: 4em;
 }
