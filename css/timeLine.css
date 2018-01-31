@@ -1,5 +1,4 @@
 /*TIME LINE*/
-
 .page-header h1{
     color: #FFFFFF;
 }
@@ -156,6 +155,22 @@
 
 .timeline-body > p + p {
     margin-top: 5px;
+}
+
+.btnTitulo{
+    width: 100%;
+    height: 50px;
+    font-size: 20pt;
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+    background-color: #FFF;
+    color: #40739e;
+}
+
+.btnTitulo:hover{
+    color: #40739e;
+}
+.btnTitulo:active{
+    color: #40739e;
 }
 
 @media (max-width: 767px) {
