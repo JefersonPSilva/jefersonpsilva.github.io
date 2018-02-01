@@ -95,3 +95,8 @@ blockquote{
   display: flex;
   height: 100vh;
 }
+
+/*Correção de espaço em telas menores*/
+.pull-left{
+	margin-right: 25px;
+}
