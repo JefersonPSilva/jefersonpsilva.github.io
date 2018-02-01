@@ -60,13 +60,13 @@ blockquote{
 	align-items: center;	
 }
 
-.titulo{
+.titulo, .page-header h1{
     font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
     color: #FFFFFF;
     font-size: 35pt;
 }
 
-.subtitulo, .subtitulo h2, .subtitulo h3	{
+.subtitulo, .subtitulo h2, .subtitulo h3 {
 	font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
     color: #FFFFFF;
     font-size: 20pt;
