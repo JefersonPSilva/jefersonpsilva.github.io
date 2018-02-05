@@ -18,6 +18,7 @@
 	<script src="js/modules/html5shiv.js" type="text/javascript" charset="utf-8" async defer></script>
 	<script src="js/modules/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/modules/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://smtpjs.com/v2/smtp.js"></script>
 	<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
 
 	<!--[if lt IE 9]>
@@ -851,7 +852,30 @@
 			</div>
 			<div class="row" id="contato">
 				<section>
-					
+					<div class="row">
+						<h5>CONTATO</h5>
+						<div class="col-md-6">
+							<form action="" method="post" id="ewf_subscriptionForm">
+								<fieldset style="border:none;" class="webform-custominputs">
+								    
+								</fieldset>
+							  	<fieldset class="webform-options" style="border:none;">
+							    	<!--Configuração SMTP-->
+							    	<input type="submit" name="submit" value="Enviar" id="eesubmit">
+							    	<!--ID Conta pessoal elastic smtp-->
+							    	<input type="hidden" name="publicaccountid" value="16ac790d-9651-40f1-a694-18f877867af0">
+							    	<input type="hidden" name="returnUrl" value="">
+							    	<input type="hidden" name="activationReturnUrl" value="">
+							    	<input type="hidden" name="activationTemplate" value="">
+							    	<input type="hidden" name="source" value="WebForm">
+							    	<input type="hidden" name="notifyEmail" value="">
+							  	</fieldset>
+							</form>
+						</div>
+						<div class="col-md-6">
+							
+						</div>
+					</div>
 				</section>
 			</div>
 		</main>

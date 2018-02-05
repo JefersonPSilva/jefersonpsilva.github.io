@@ -30,3 +30,17 @@ $(document).on("click", ".panel-heading span.pressionado", function(e){
 		$this.find("i").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
 	}
 });
+
+$("#eesubmit").click(function() {
+	sendMail();
+});
+
+var sendMail = function(){
+	Email.send("from@jeferson_p.silva@outlook.com",
+"to@jeferson_p.silva@outlook.com",
+"This is a subject",
+"this is the body",
+"smtp.elasticemail.com",
+"jeferson_p.silva@outlook.com",
+"37fc1db2-3db3-4262-ac36-1c0962fb7d66");
+}
