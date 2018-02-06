@@ -21,6 +21,7 @@
 	<script src="js/modules/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/modules/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="https://smtpjs.com/v2/smtp.js"></script>
+	<script src="js/modules/jquery.mask.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
 
 	<!--[if lt IE 9]>
@@ -878,23 +879,23 @@
 							<div class="col-md-6 col-sm-6 col-xl-6 col-lg-6 form-line">
 					  			<div class="form-group">
 					  				<label for="nome">Nome</label>
-							    	<input type="text" class="form-control" id="nome" placeholder="Por favor, informe seu nome." required="required" />
+							    	<input type="text" class="form-control" id="nome" name="nome" placeholder="Por favor, informe seu nome." required="required" />
 						  		</div>
 						  		<div class="form-group">
 							    	<label for="telefone">Número para Contato</label>
-							    	<input type="tel" class="form-control" id="telefone" placeholder="Por favor, informe um número para contato." />
+							    	<input type="tel" class="form-control" id="telefone" name="telefone" />
 					  			</div>
 						  		<div class="form-group">
 							    	<label for="email">E-mail</label>
-							    	<input type="email" class="form-control" id="email" placeholder="Por favor, informe seu e-mail." required="required" />
+							    	<input type="email" class="form-control" id="email" name="email" required="required" />
 							  	</div>
 							  	<div class="form-group">
 					  				<label for="assunto">Assunto</label>
-							    	<input type="text" class="form-control" id="assunto" placeholder="Por favor, informe do que se trata." required="required" />
+							    	<input type="text" class="form-control" id="assunto" name="assunto" placeholder="Por favor, informe do que se trata." required="required" />
 						  		</div>
 							  	<div class="form-group">
 					  				<label for="mensagem">Mensagem</label>
-					  			 	<textarea  class="form-control" id="mensagem" placeholder="Digite sua mensagem." required="required" wrap='off' rows="6" cols="200"></textarea>
+					  			 	<textarea  class="form-control" id="mensagem" name="mensagem" placeholder="Digite sua mensagem." required="required" wrap='off' rows="6" cols="200"></textarea>
 					  			</div>
 					  			<div>
 					  				<label for="btnEnviar"></label>
