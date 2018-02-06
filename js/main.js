@@ -8,31 +8,16 @@ $(document).ready(function() {
 	    return false;
 	});
 	
-
+	// Evento drop down área conhecimento, itens especificos
 	$('[id^=detail-]').hide();
     $('.toggle').click(function() {
         $input = $( this );
         $target = $('#'+$input.attr('data-toggle'));
         $target.slideToggle();
     });
-	
-});
 
-$(document).on("click", ".panel-heading span.pressionado", function(e){
-    var $this = $(this);
-	if(!$this.hasClass("panel-collapsed")) {
-		$this.parents(".panel").find(".panel-body").slideUp();
-		$this.addClass("panel-collapsed");
-		$this.find("i").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
-	} else {
-		$this.parents(".panel").find(".panel-body").slideDown();
-		$this.removeClass("panel-collapsed");
-		$this.find("i").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
-	}
-});
-
-$(document).ready(function(){  
-	$('#btnenviar').click(function(e){   
+    // Validar form e-mail
+    $('#btnenviar').click(function(e){   
         var inNome = $('#txtinputnome'),
         	inEmail = $('#txtinputemail'),
         	inAssunto = $('#txtinputassunto'),
@@ -60,4 +45,19 @@ $(document).ready(function(){
             $inArea.focus();                 
         }
     });
+	
+});
+
+//Evento drop down área conhecimentos
+$(document).on("click", ".panel-heading span.pressionado", function(e){
+    var $this = $(this);
+	if(!$this.hasClass("panel-collapsed")) {
+		$this.parents(".panel").find(".panel-body").slideUp();
+		$this.addClass("panel-collapsed");
+		$this.find("i").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+	} else {
+		$this.parents(".panel").find(".panel-body").slideDown();
+		$this.removeClass("panel-collapsed");
+		$this.find("i").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
+	}
 });
