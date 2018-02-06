@@ -45,7 +45,6 @@ $(document).ready(function() {
             $inArea.focus();                 
         }
     });
-	
 });
 
 //Evento drop down área conhecimentos

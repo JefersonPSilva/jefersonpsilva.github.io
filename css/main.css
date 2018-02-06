@@ -1,6 +1,6 @@
 /*Bootstrap scrollspy plugin*/
 body {
-    position: absolute; 
+    position: absolute;
 }
 
 blockquote{
@@ -16,24 +16,28 @@ blockquote{
 	background-color: #273c75;
 	height: 100%;
 	padding: 50px 30px;
+	min-height: 100vh;
 }
 
 #experiencia{
 	background-color: #40739e;
 	height: 100%;
 	padding: 20px 30px;
+	min-height: 100vh;
 }
 
 #conhecimento{
 	background-color: #dcdde1;
 	height: 100%;
 	padding: 20px 30px;
+	min-height: 100vh;
 }
 
 #contato{
 	background-color: #2f3640;
 	height: 100%;
-	padding: 20px 30px;
+	padding: 20px 30px; 
+	min-height: 100vh;
 }
 
 #menu ul li a, #menu a{
