@@ -31,16 +31,33 @@ $(document).on("click", ".panel-heading span.pressionado", function(e){
 	}
 });
 
-$("#eesubmit").click(function() {
-	sendMail();
+$(document).ready(function(){  
+	$('#btnenviar').click(function(e){   
+        var inNome = $('#txtinputnome'),
+        	inEmail = $('#txtinputemail'),
+        	inAssunto = $('#txtinputassunto'),
+        	inArea = $('#txtinputarea'),
+        	btnEnviar = $('#btnenviar');
+        
+        var emailformat = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        var latinformat=/[^a-zA-Z\-\'\ ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏàáâãäåæçèéêëìíîïÐÑÒÓÔÕÖØÙÚÛÜÝÞßðñòóôõöøùúûüýþÿ]/i;
+        
+        if($inNome.val().length<=2 || latinformat.test($inNome.val())){
+            e.preventDefault();
+            $('#txtinputnome + span').toggle().html("Informe um nome válido !");
+            $inNome.focus();                 
+        }else if(!emailformat.test($inEmail.val())){
+            e.preventDefault();
+            $('#txtinputemail + span').toggle().html("Informe um e-mail válido !");
+            $inEmail.focus();                 
+        }else if($inAssunto.val().length<=2 || !latinformat.test($inAssunto.val())){
+            e.preventDefault();
+            $('#txtinputassunto + span').toggle().html("Informe um assunto válido !");
+            $inAssunto.focus();                 
+        }else if($inArea.val().length<=2 || !latinformat.test($inArea.val())){
+            e.preventDefault();
+            $('#txtinputarea + span').toggle().html("Informe uma mensagem válida !");
+            $inArea.focus();                 
+        }
+    });
 });
-
-var sendMail = function(){
-	Email.send("from@jeferson_p.silva@outlook.com",
-"to@jeferson_p.silva@outlook.com",
-"This is a subject",
-"this is the body",
-"smtp.elasticemail.com",
-"jeferson_p.silva@outlook.com",
-"37fc1db2-3db3-4262-ac36-1c0962fb7d66");
-}

@@ -1,102 +1,11 @@
-/*Bootstrap scrollspy plugin*/
-body {
-    position: relative; 
+.form-line{
+  border-right: 1px solid #B29999;
 }
 
-blockquote{
-	color: #FFFFFF;
+.form-line label{
+  color: #FFFFFF;
 }
 
-#cabecalho{
-	background-color: #535c68;
-	height: 100%;
-}
-
-#sobre{
-	background-color: #273c75;
-	height: 100%;
-	padding: 50px 30px;
-	display: table;
-}
-
-#experiencia{
-	background-color: #40739e;
-	height: 100%;
-	padding: 20px 30px;
-	display: table;
-}
-
-#conhecimento{
-	background-color: #dcdde1;
-	height: 100%;
-	padding: 20px 30px;
-	display: table;
-	width: 100%;
-}
-
-#contato{
-	background-color: #2f3640;
-	height: 100%;
-	padding: 20px 30px;
-	display: table;
-	width: 100%;
-}
-
-#menu ul li a, #menu a{
-	font-size: 20pt;
-	font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
-}
-
-.textoBanner{
-	width: 100%;
-	border: 2px solid #FFFFFF;
-	padding: 30px 100px 30px;
-	display: block;
-}
-
-
-.img-itsme{
-	margin: 40px auto;
-	align-items: center;	
-}
-
-.titulo, .page-header h1{
-    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
-    color: #FFFFFF;
-    font-size: 35pt;
-}
-
-.subtitulo, .subtitulo h2, .subtitulo h3 {
-	font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
-    color: #FFFFFF;
-    font-size: 20pt;
-}
-
-#sobre h4, .fa, #sobre span{
-	color: #FFFFFF;
-}
-
-.texto-informacao{
-    color: #FFFFFF;
-    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
- 	letter-spacing:0.1em;
-	margin: 20px auto;
- 	line-height: 145%;
- 	font-size: 12pt;
- 	font-variant: small-caps;
- 	text-align: justify;
- 	text-indent: 4em;
-}
-
-.vAlign{
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  height: 100vh;
-}
-
-/*Correção de espaço em telas menores*/
-.pull-left{
-	margin-right: 25px;
+legend{
+  color: #FFFFFF;
 }
