@@ -16,36 +16,6 @@ $(document).ready(function() {
         $target.slideToggle();
     });
 
-    // Validar form e-mail
-    $("#btnenviar").click(function(e){   
-        var inNome = $("#txtinputnome"),
-        	inEmail = $("#txtinputemail"),
-        	inAssunto = $("#txtinputassunto"),
-        	inArea = $("#txtinputarea"),
-        	btnEnviar = $("#btnenviar");
-        
-        var emailformat = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-        var latinformat= /[^a-zA-Z\-\'\ ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏàáâãäåæçèéêëìíîïÐÑÒÓÔÕÖØÙÚÛÜÝÞßðñòóôõöøùúûüýþÿ]/i;
-        
-        if($inNome.val().length<=2 || latinformat.test($inNome.val())){
-            e.preventDefault();
-            $("#txtinputnome + span").toggle().html("Informe um nome válido !");
-            $inNome.focus();                 
-        }else if(!emailformat.test($inEmail.val())){
-            e.preventDefault();
-            $("#txtinputemail + span").toggle().html("Informe um e-mail válido !");
-            $inEmail.focus();                 
-        }else if($inAssunto.val().length<=2 || !latinformat.test($inAssunto.val())){
-            e.preventDefault();
-            $("#txtinputassunto + span").toggle().html("Informe um assunto válido !");
-            $inAssunto.focus();                 
-        }else if($inArea.val().length<=2 || !latinformat.test($inArea.val())){
-            e.preventDefault();
-            $("#txtinputarea + span").toggle().html("Informe uma mensagem válida !");
-            $inArea.focus();                 
-        }
-    });
-
     //jquery mask plugin configuração form contato
     $("#telefone").mask("(00) 00000-0000", {placeholder: "(00) 00000-0000"});
     $("#email").mask("A", {
@@ -53,6 +23,37 @@ $(document).ready(function() {
 			"A": { pattern: /[\w@\-.+]/, recursive: true }
 		},
 		placeholder: "contato@contato.com"
+	});
+
+    // jquery validation plugin .validate()
+	var $form = $("form"),
+  	$successMsg = $(".alert");
+	$.validator.addMethod("letters", function(value, element) {
+  		return this.optional(element) || value == value.match(/^[a-zA-Z\s]*$/);
+	});
+	$form.validate({
+	  	rules: {
+	    	nome: {
+	      		required: true,
+	      		minlength: 3,
+	      		letters: true
+	    	},
+	    	email: {
+	      		required: true,
+	      		email: true
+	    	},
+	    	telefone: {
+	    		required: true,
+	    		
+	    	}
+	  },
+	  messages: {
+    	name: "Please specify your name (only letters and spaces are allowed)",
+	    email: "Please specify a valid email address"
+	  },
+	  submitHandler: function() {
+	    $successMsg.show();
+	  }
 	});
 });
 
@@ -69,3 +70,4 @@ $(document).on("click", ".panel-heading span.pressionado", function(e){
 		$this.find("i").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
 	}
 });
+

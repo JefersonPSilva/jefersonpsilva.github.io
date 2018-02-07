@@ -20,8 +20,10 @@
 	<script src="js/modules/html5shiv.js" type="text/javascript" charset="utf-8" async defer></script>
 	<script src="js/modules/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/modules/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="https://smtpjs.com/v2/smtp.js"></script>
+	<!-- <script src="https://smtpjs.com/v2/smtp.js"></script> -->
 	<script src="js/modules/jquery.mask.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/modules/jquery.validate.js" type="text/javascript" charset="utf-8"></script>
+	
 	<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
 
 	<!--[if lt IE 9]>
@@ -873,7 +875,11 @@
 		<footer>
 			<div class="row" id="contato">
 				<section>
-					<form>
+					<div class="alert alert-success">
+			        	<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+			        	<strong>Mensagem enviada com sucesso!</strong>
+			      	</div>
+					<form id="formContato" role="form">
 						<fieldset>
 							<legend>Contato</legend>
 							<div class="col-md-6 col-sm-6 col-xl-6 col-lg-6 form-line">
@@ -899,7 +905,7 @@
 					  			</div>
 					  			<div>
 					  				<label for="btnEnviar"></label>
-					  				<button type="button" class="btn btn-default" id="btnEnviar"><i class="fa fa-paper-plane" aria-hidden="true"></i> Enviar Mensagem</button>
+					  				<button type="submit" class="btn btn-default" id="btnEnviar"><i class="fa fa-paper-plane" aria-hidden="true"></i> Enviar Mensagem</button>
 					  			</div>
 					  		</div>
 				  		</fieldset>
