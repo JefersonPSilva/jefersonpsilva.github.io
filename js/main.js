@@ -14,48 +14,9 @@ $(document).ready(function() {
         $input = $( this );
         $target = $("#"+$input.attr("data-toggle"));
         $target.slideToggle();
-    });
-
-    //jquery mask plugin configuração form contato
-    $("#telefone").mask("(00) 00000-0000", {placeholder: "(00) 00000-0000"});
-    $("#email").mask("A", {
-		translation: {
-			"A": { pattern: /[\w@\-.+]/, recursive: true }
-		},
-		placeholder: "contato@contato.com"
-	});
-
-    // jquery validation plugin .validate()
-	var $form = $("form"),
-  	$successMsg = $(".alert");
-	$.validator.addMethod("letters", function(value, element) {
-  		return this.optional(element) || value == value.match(/^[a-zA-Z\s]*$/);
-	});
-	$form.validate({
-	  	rules: {
-	    	nome: {
-	      		required: true,
-	      		minlength: 3,
-	      		letters: true
-	    	},
-	    	email: {
-	      		required: true,
-	      		email: true
-	    	},
-	    	telefone: {
-	    		required: true,
-	    		
-	    	}
-	  },
-	  messages: {
-    	name: "Please specify your name (only letters and spaces are allowed)",
-	    email: "Please specify a valid email address"
-	  },
-	  submitHandler: function() {
-	    $successMsg.show();
-	  }
-	});
+    });	
 });
+	
 
 //Evento drop down área conhecimentos
 $(document).on("click", ".panel-heading span.pressionado", function(e){

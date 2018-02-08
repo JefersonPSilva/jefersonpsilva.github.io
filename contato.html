@@ -22,7 +22,7 @@
 	<script src="js/modules/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 	<!-- <script src="https://smtpjs.com/v2/smtp.js"></script> -->
 	<script src="js/modules/jquery.mask.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/modules/jquery.validate.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/modules/validacao.js" type="text/javascript" charset="utf-8"></script>
 	
 	<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
 
@@ -875,11 +875,8 @@
 		<footer>
 			<div class="row" id="contato">
 				<section>
-					<div class="alert alert-success">
-			        	<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-			        	<strong>Mensagem enviada com sucesso!</strong>
-			      	</div>
-					<form id="formContato" role="form">
+			      	<!-- jquery  form validator-->
+					<form id="formContato" role="form" action="" method="POST">
 						<fieldset>
 							<legend>Contato</legend>
 							<div class="col-md-6 col-sm-6 col-xl-6 col-lg-6 form-line">
