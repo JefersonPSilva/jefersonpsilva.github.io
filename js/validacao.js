@@ -56,6 +56,7 @@ $(function(){
         },
         submitHandler: function (form) {
             if (form.valid()) {
+                $("#formContato").attr("method", "POST");
                 emailjs.send("jefersonpsilva_outlook","template_FXxnEYmN", {
                     name: "James", 
                     notes: "Check this out!"
@@ -63,7 +64,8 @@ $(function(){
                 .then(function(response) {
                    console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
                 }, function(err) {
-                   console.log("FAILED. error=", err);
+                    console.log("FAILED. error=", err);
+                    return false;
                 });
                 // $(".sucess_box").css("display", "block");          
             };
