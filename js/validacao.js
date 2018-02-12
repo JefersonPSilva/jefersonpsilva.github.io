@@ -56,7 +56,7 @@ $(function(){
         },
         submitHandler: function (form) {
             if (form.valid()) {
-                emailjs.send("user_nPcjen9FAB5mMoXpExSKf","template_FXxnEYmN", {
+                emailjs.send("jefersonpsilva_outlook","template_FXxnEYmN", {
                     name: "James", 
                     notes: "Check this out!"
                 })
