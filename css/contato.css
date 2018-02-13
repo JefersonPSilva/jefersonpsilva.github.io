@@ -1,11 +1,62 @@
-.form-line{
-  border-right: 1px solid #B29999;
+#contato{
+	background-color: #2f3640;
+	height: 100%;
+	padding: 50px 30px; 
+	min-height: 100vh;
 }
 
-.form-line label{
-  color: #FFFFFF;
+.form-line{
+  	border-right: 1px solid #B29999;
+}
+
+.contato-right span, 
+.contato-right p, 
+.contato-right h3, 
+.contato-right h4{
+	font-size: 20px;
+	color: #FFFFFF;
+	justify-content: space-between;
+}
+.contato-right{
+	padding: 20px 30px;
 }
 
 legend{
-  color: #FFFFFF;
+  	color: #FFFFFF;
+  	font-size: 35px;
+}
+
+.sucess_box{
+ 	display: block;
+ 	border: 2px solid #44bd32;
+ 	margin-bottom: 5px;
+ 	background: #4cd137;
+ 	padding: 2px 5px;
+}
+
+#btnEnviar{
+	background-color: #f9ca24;
+	border: 2px solid #f0932b;
+	font-size: 20px;
+}
+#btnEnviar i, 
+#btnEnviar,
+.sucess_box h3{
+	color: #FFFFFF;
+}
+.sucess_box{
+	display: none;
+}
+
+#formContato label.invalidoEmail{
+	color: #e84118;
+}
+
+#formContato label{
+	font-size: 20px;
+	color: #FFFFFF;
+} 
+#formContato input,
+#formContato textarea{
+	font-size: 20px;
 }

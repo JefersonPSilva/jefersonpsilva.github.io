@@ -2,12 +2,7 @@
 //jquery mask plugin configuração mask form
 $(document).ready(function() {
     $("#telefone").mask("(00) 00000-0000", {placeholder: "(00) 00000-0000"});
-
-    (function(){
-        emailjs.init("user_nPcjen9FAB5mMoXpExSKf");
-    })();
 });
-
 
 $(function(){
     //https://jqueryvalidation.org
@@ -17,6 +12,7 @@ $(function(){
     }, "Este número de celular e inválido.");
 
     $("#formContato").validate({
+        errorClass: "invalidoEmail",
         rules:{
             email: {
                 required: true,
@@ -55,20 +51,21 @@ $(function(){
             }
         },
         submitHandler: function (form) {
-            if (form.valid()) {
-                $("#formContato").attr("method", "POST");
-                emailjs.send("jefersonpsilva_outlook","template_FXxnEYmN", {
-                    name: "James", 
-                    notes: "Check this out!"
-                })
-                .then(function(response) {
-                   console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
-                }, function(err) {
-                    console.log("FAILED. error=", err);
-                    return false;
+            var formulario = $("#formContato").valid();
+            if (formulario) {
+                //EmailJS SMTP configuration
+                //https://www.emailjs.com/
+                emailjs.init("user_nPcjen9FAB5mMoXpExSKf");
+                emailjs.send("jefersonpsilva_outlook","portf_lio_jeferson",{
+                    nome: $("#nome").val(),
+                    email: $("#email").val(),
+                    mensagem: $("#mensagem").val(),
+                    telefone: $("#telefone").val(),
+                    notes: "https://jefersonpsilva.github.io/index.html"
                 });
-                // $(".sucess_box").css("display", "block");          
-            };
+                $(".sucess_box").css("display", "block");
+                $("#nome").focus(); 
+            }
             return false;
         }
     });
