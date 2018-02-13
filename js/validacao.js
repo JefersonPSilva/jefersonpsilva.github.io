@@ -35,7 +35,7 @@ $(function(){
         },
         messages: {
             email: {
-                required: "Por favor, informe um email.",
+                required: "Por favor, informe seu email.",
                 email: "Este email e inválido."
             },
             nome: {

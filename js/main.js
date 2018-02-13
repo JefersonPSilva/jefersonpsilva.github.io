@@ -15,6 +15,12 @@ $(document).ready(function() {
         $target = $("#"+$input.attr("data-toggle"));
         $target.slideToggle();
     });	
+
+    // Iniciar com todos os data-togle dropdown fechados
+    $(".pressionado").addClass("panel-collapsed");
+    $(".panel-body").css("display", "none");
+    $(".pressionado i").removeClass("glyphicon-chevron-up");
+    $(".pressionado i").addClass("glyphicon-chevron-down");
 });
 	
 

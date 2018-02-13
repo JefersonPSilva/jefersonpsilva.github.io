@@ -2,6 +2,9 @@
     font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
     color: #FFFFFF;
     font-size: 35pt;
+    letter-spacing:0.1em;
+	font-variant: small-caps;
+	line-height: 145%;
 }
 
 .vAlign{

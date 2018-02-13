@@ -1,7 +1,7 @@
 #contato{
-	background-color: #2f3640;
+	background-color: #535c68;
 	height: 100%;
-	padding: 50px 30px; 
+	padding: 20px 30px; 
 	min-height: 100vh;
 }
 
@@ -13,17 +13,16 @@
 .contato-right p, 
 .contato-right h3, 
 .contato-right h4{
-	font-size: 20px;
+	font-size: 15pt;
 	color: #FFFFFF;
+	font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
 	justify-content: space-between;
+	letter-spacing:0.1em;
+	font-variant: small-caps;
+	line-height: 145%;
 }
 .contato-right{
 	padding: 20px 30px;
-}
-
-legend{
-  	color: #FFFFFF;
-  	font-size: 35px;
 }
 
 .sucess_box{
@@ -37,26 +36,50 @@ legend{
 #btnEnviar{
 	background-color: #f9ca24;
 	border: 2px solid #f0932b;
-	font-size: 20px;
+	font-size: 15pt;
+	font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+	letter-spacing:0.1em;
+	font-variant: small-caps;
+	line-height: 145%;
 }
 #btnEnviar i, 
-#btnEnviar,
-.sucess_box h3{
+#btnEnviar{
 	color: #FFFFFF;
 }
+
 .sucess_box{
 	display: none;
+	height: 40px;
+}
+.success_mensage{
+	height: 100%;
+	padding-top: 15px;
+}
+.sucess_box span{
+	font-size: 15pt;
+	color: #FFFFFF;
 }
 
 #formContato label.invalidoEmail{
 	color: #e84118;
+	letter-spacing:0.1em;
+	font-variant: small-caps;
+	line-height: 145%;
+	font-size: 15pt;
 }
 
 #formContato label{
-	font-size: 20px;
+	font-size: 15pt;
 	color: #FFFFFF;
+	letter-spacing:0.1em;
+	font-variant: small-caps;
+	line-height: 145%;
 } 
 #formContato input,
 #formContato textarea{
-	font-size: 20px;
+	font-size: 15pt;
+	font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+	letter-spacing:0.1em;
+	font-variant: small-caps;
+	line-height: 145%;
 }
