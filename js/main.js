@@ -22,7 +22,13 @@ $(document).ready(function() {
     $(".pressionado i").removeClass("glyphicon-chevron-up");
     $(".pressionado i").addClass("glyphicon-chevron-down");
 });
-	
+
+// Event flip card área conhecimento
+$(function() {
+    $("div.flipcard").on("click", function(evt) {
+       $(this).toggleClass("flip");
+    });
+});
 
 //Evento drop down área conhecimentos
 $(document).on("click", ".panel-heading span.pressionado", function(e){
