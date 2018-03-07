@@ -1,21 +1,25 @@
-.page-header h1{
-    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
-    color: #FFFFFF;
-    font-size: 35pt;
-    letter-spacing:0.1em;
+/*.page-header h1{
+  font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+  color: #FFFFFF;
+  font-size: 35pt;
+  letter-spacing:0.1em;
 	font-variant: small-caps;
 	line-height: 145%;
 }
 
 .vAlign{
-  	flex-direction: column;
-  	justify-content: center;
-  	align-items: center;
-  	display: flex;
-  	height: 100vh;
+  flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	height: 100vh;
 }
-
+*/
 /*Correção de espaço em telas menores*/
-.pull-left{
+/*.pull-left{
 	margin-right: 25px;
+}*/
+
+body{
+	padding-top: 72px;
 }
