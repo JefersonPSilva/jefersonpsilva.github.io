@@ -16,11 +16,11 @@ $(document).ready(function() {
         $target.slideToggle();
     });	
 
-    // Iniciar com todos os data-togle dropdown fechados
+    //Iniciar com todos os data-togle dropdown fechados
     $(".pressionado").addClass("panel-collapsed");
     $(".panel-body").css("display", "none");
-    $(".pressionado i").removeClass("glyphicon-chevron-up");
-    $(".pressionado i").addClass("glyphicon-chevron-down");
+    $(".pressionado i").removeClass("fa fa-chevron-up");
+    $(".pressionado i").addClass("fa fa-chevron-down");
 });
 
 // Event flip card área conhecimento
@@ -36,11 +36,11 @@ $(document).on("click", ".panel-heading span.pressionado", function(e){
 	if(!$this.hasClass("panel-collapsed")) {
 		$this.parents(".panel").find(".panel-body").slideUp();
 		$this.addClass("panel-collapsed");
-		$this.find("i").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+		$this.find("i").removeClass("fa fa-chevron-up").addClass("fa fa-chevron-down");
 	} else {
 		$this.parents(".panel").find(".panel-body").slideDown();
 		$this.removeClass("panel-collapsed");
-		$this.find("i").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
+		$this.find("i").removeClass("fa fa-chevron-down").addClass("fa fa-chevron-up");
 	}
 });
 
