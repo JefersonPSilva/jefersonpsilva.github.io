@@ -16,9 +16,9 @@
 	<!-- <link rel="stylesheet" type="text/css" href="css/home.css"> -->
 	<!-- <link rel="stylesheet" type="text/css" href="css/sobre.css"> -->
 	<!-- <link rel="stylesheet" type="text/css" href="css/conhecimento.css"> -->
-	<!-- <link rel="stylesheet" type="text/css" href="css/contato.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/contato.css">
 	<link rel="stylesheet" type="text/css" href="css/experiencia.css">
-	<!-- <link rel="stylesheet" type="text/css" href="css/portfolio.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/portfolio.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 
 	<script src="js/modules/html5shiv.js" type="text/javascript" charset="utf-8"></script>
@@ -56,23 +56,24 @@
 		<!-- NAV MENU -->
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav ml-auto">
-				<li class="nav-item"><a class="btn btn-outline-light ml-md-3" href="#">SOBRE</a></li>
-				<li class="nav-item"><a class="btn btn-outline-light ml-md-3" href="#">EXPERIÊNCIA</a></li>
-				<li class="nav-item"><a class="btn btn-outline-light ml-md-3" href="#">PORTFÓLIO</a></li>
-				<li class="nav-item"><a class="btn btn-outline-light ml-md-3" href="#">CONHECIMENTOS</a></li>
-				<li class="nav-item"><a class="btn btn-outline-light ml-md-3" href="#">CONTATO</a></li>
+				<li class="nav-item"><a class="btn btn-outline-light ml-md-3 scrollSuave" href="#sobre">SOBRE</a></li>
+				<li class="nav-item"><a class="btn btn-outline-light ml-md-3 scrollSuave" href="#experiencia">EXPERIÊNCIA</a></li>
+				<li class="nav-item"><a class="btn btn-outline-light ml-md-3 scrollSuave" href="#portfolio">PORTFÓLIO</a></li>
+				<li class="nav-item"><a class="btn btn-outline-light ml-md-3 scrollSuave" href="#conhecimento">CONHECIMENTOS</a></li>
+				<li class="nav-item"><a class="btn btn-outline-light ml-md-3 scrollSuave" href="#contato">CONTATO</a></li>
 			</ul>
 		</div>
 	</nav>
 	<!-- seção sobre -->
-	<section class="container-fluid bg-primary">
+	<section class="container-fluid" id="sobre">
+		<p class="h1 pt-5">SOBRE</p>
+		<hr>
 		<div class="row">
 			<div class="col-md-4">
 				<img src="img/eu.png" class="img-thumbnail m-5	" height="200px" width="200px" alt="Foto Jeferson Pereira" />
 			</div>
 			<div class="col-md-8 col-sm-8 col-xl-8 col-lg-8 text-white">
 				<article class="my-5">
-					<p>Sobre</p>
 					<hgroup>
 						<h3>Jeferson Pereira</h3>
 						<p>Desenvolvedor Web PHP Júnior / Java Web Júnior / Fron-End Júnior</p>
@@ -117,8 +118,8 @@
 		</div>
 	</section><!--end seção sobre-->
 	<!-- seção experiência -->
-	<section class="container-fluid bg-info">
-		<h4>EXPERIÊNCIA</h4>
+	<section class="container-fluid" id="experiencia">
+		<p class="h1 pt-5">EXPERIÊNCIA</p>
 		<hr>
 		<div class="row">
 	    	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
@@ -240,16 +241,80 @@
 		    </div>
 		</div>
 	</section><!--end seção experiência-->
-	<!-- seção conhecimento -->
-	<section class="container-fluid bg-danger">
+	<!-- seção portfólio -->
+	<section class="container-fluid" id="portfolio">
+		<p class="h1 pt-5">PORTFÓLIO</p>
+		<hr>
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xl-4 col-lg-4">
+						<div class="flipcard">
+					        <div class="front">
+					        	<p class="h5">IMB - Instituto Mauro Borges de Estatísticas e Estudos Socioeconômicos</p>
+					          	<!-- local -->
+					          	<!-- nome ferramenta -->
+					          	<!-- img -->
+					          	<!-- btn detalhes -->
+					        </div><!--end front card-->
+					        <div class="back">
+
+					           	<!-- tecnologias -->
+					           	<!-- endereco -->
+					           	<!-- descrição  -->
+					        </div><!--end back card-->
+				    	</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xl-4 col-lg-4">
+						<div class="flipcard">
+					        <div class="front">
+					        	<p class="h5">IMB - Instituto Mauro Borges de Estatísticas e Estudos Socioeconômicos</p>
+					          	<!-- local -->
+					          	<!-- nome ferramenta -->
+					          	<!-- img -->
+					          	<!-- btn detalhes -->
+					        </div><!--end front card-->
+					        <div class="back">
+
+					           	<!-- tecnologias -->
+					           	<!-- endereco -->
+					           	<!-- descrição  -->
+					        </div><!--end back card-->
+				    	</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xl-4 col-lg-4">
+						<div class="flipcard">
+					        <div class="front">
+					        	<p class="h5">IMB - Instituto Mauro Borges de Estatísticas e Estudos Socioeconômicos</p>
+					          	<!-- local -->
+					          	<!-- nome ferramenta -->
+					          	<!-- img -->
+					          	<!-- btn detalhes -->
+					        </div><!--end front card-->
+					        <div class="back">
+
+					           	<!-- tecnologias -->
+					           	<!-- endereco -->
+					           	<!-- descrição  -->
+					        </div><!--end back card-->
+				    	</div>
+					</div>
+				</div><!--end row-->
+			</div><!--end col-->
+		</div>	
+	</section><!--end seção portfólio-->
+	<!-- seção conhecimento -->
+	<section class="container-fluid" id="conhecimento">
+		<p class="h1 pt-5">CONHECIMENTOS</p>
+		<hr>
+		<div class="row">
+			<div class="col-md-12 px-4">
 				<!--Obs.: Passar um número para cada ul li-->
 				<!--Devido ao evento de collapse interno-->
-				<div class="row">
+				<div class="row p-2 m-4">
 					<div class="col-md-6 col-sm-6 col-xl-6 col-lg-6">
 						<div class="panel panel-primary">
-							<div class="panel-heading">
+							<div class="panel panel-heading">
 								<h3 class="panel-title">
 								Java
 								<span class="pull-right pressionado"><i class="fa fa-chevron-up"></i></span>
@@ -386,7 +451,7 @@
 						</div>
 					</div><!--end col -->
 				</div><!--end row-->
-				<div class="row">
+				<div class="row p-2 m-4">
 					<div class="col-md-6 col-sm-6 col-xl-6 col-lg-6">
 						<div class="panel panel-primary">
 							<div class="panel-heading">
@@ -548,7 +613,7 @@
 						</div><!--end panel-->
 					</div><!--end col -->
 				</div><!--end row-->
-				<div class="row">
+				<div class="row p-2 m-4">
 					<div class="col-md-6 col-sm-6 col-xl-6 col-lg-6">
 						<div class="panel panel-primary">
 							<div class="panel-heading">
@@ -644,7 +709,7 @@
 						</div><!--end panel-->
 					</div><!--end col-->
 				</div><!--end row-->
-				<div class="row">
+				<div class="row p-2 m-4">
 					<div class="col-md-6 col-sm-6 col-xl-6 col-lg-6">
 						<div class="panel panel-primary">
 							<div class="panel-heading">
@@ -811,5 +876,64 @@
 			</div>
 		</div>
 	</section><!--end seção conhecimento-->
+	<footer class="container-fluid" id="contato">
+		<p class="h1 pt-5">CONTATO</p>
+		<hr>
+		<div class="row">
+			<div class="col-md-6 col-sm-6 col-xl-6 col-lg-6 form-line">
+				<div class="sucess_box">
+					<span class="success_mensage">
+						<i class="glyphicon glyphicon-check"></i> Sua mensagem foi enviada com sucesso!
+					</span>
+				</div>
+		      	<!-- jquery validation plugin & jquery mask plugin-->
+				<form id="formContato" role="form" action="#" method="POST">
+					<fieldset class="box-shadow p-2">
+			  			<div class="form-group">
+			  				<label for="nome">Nome</label>
+					    	<input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome..." required="required" />
+				  		</div>
+				  		<div class="form-group">
+					    	<label for="telefone">Número / Whatsapp (opcional)</label>
+					    	<input type="tel" class="form-control" id="telefone" name="telefone" />
+			  			</div>
+				  		<div class="form-group">
+					    	<label for="email" class="control-label">Email</label>
+					    	<input type="email" class="form-control" id="email" name="email" required="required" placeholder="Seu email..." />
+					  	</div>
+					  	<div class="form-group">
+			  				<label for="assunto">Assunto</label>
+					    	<input type="text" class="form-control" id="assunto" name="assunto" placeholder="Por favor, informe do que se trata." required="required" />
+				  		</div>
+					  	<div class="form-group">
+			  				<label for="mensagem">Mensagem</label>
+			  			 	<textarea  class="form-control" id="mensagem" name="mensagem" placeholder="Sua mensagem..." required="required" wrap='off' rows="4" cols="200"></textarea>
+			  			</div>
+			  			<div>
+			  				<label for="btnEnviar"></label>
+			  				<button type="submit" class="btn btn-default pull-right" id="btnEnviar" value="Enviar"><i class="fa fa-paper-plane" aria-hidden="true"></i> Enviar Mensagem</button>
+			  			</div>
+			  		</fieldset>
+				</form>
+			</div>
+	  		<div class="col-md-6 col-sm-6 col-xl-6 col-lg-6 align-items-center">
+	  			<div>
+	  				<ul>
+	  				<li>Jeferson P. da Silva</li>
+	  				<li>Desenvolvedor Web Java Júnior | Desenvolvedor PHP Júnior</li>
+	  				<li>Entre em contato, respondo o mais rápido possível.</li>
+	  			</ul>
+	  				<span><i class="fa fa-github-square fa-2x"></i> https://github.com/JefersonPSilva</span>
+		  			<br>
+		  			<span><i class="fa fa-envelope fa-2x"></i> jeferson_p.silva@outlook.com</span>
+		  			<br>
+		  			<span><i class="fa fa-google-plus-square fa-2x"></i> jefersonp.silv4@gmail.com</span>
+		  			<br>
+		  			<br>
+		  			<p>Ou você pode enviar uma mensagem usando o formulário de contato!</p>
+	  			</div>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>

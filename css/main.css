@@ -20,6 +20,15 @@
 	margin-right: 25px;
 }*/
 
+.box-shadow{
+	/*Tecnica para sobrepor sombra*/
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.05),
+				0 4px 8px 0 rgba(0,0,0,.05);
+}
+
 body{
 	padding-top: 72px;
+}
+hr{
+	color: #FFFFFF;
 }

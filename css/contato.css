@@ -14,7 +14,7 @@
 .contato-right h3, 
 .contato-right h4{
 	font-size: 15pt;
-	color: #FFFFFF;
+	/*color: #FFFFFF;*/	
 	font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
 	justify-content: space-between;
 	letter-spacing:0.1em;
@@ -70,7 +70,7 @@
 
 #formContato label{
 	font-size: 15pt;
-	color: #FFFFFF;
+	/*color: #FFFFFF;*/
 	letter-spacing:0.1em;
 	font-variant: small-caps;
 	line-height: 145%;
