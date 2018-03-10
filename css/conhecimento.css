@@ -1,8 +1,5 @@
-#conhecimento{
-    background-color: #dcdde1;
-    height: 100%;
-    padding: 20px 30px;
-    min-height: 100vh;
+.bg-conhecimento{
+	background-color: #dcdde1;
 }
 
 .panel-title{

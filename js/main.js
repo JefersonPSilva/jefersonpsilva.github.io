@@ -16,11 +16,9 @@ $(document).ready(function() {
         $target.slideToggle();
     });	
 
-    //Iniciar com todos os data-togle dropdown fechados
-    $(".pressionado").addClass("panel-collapsed");
-    $(".panel-body").css("display", "none");
-    $(".pressionado i").removeClass("fa fa-chevron-up");
-    $(".pressionado i").addClass("fa fa-chevron-down");
+	$(".box").on("click", function(){
+		$(".box").toggleClass("flipped");
+	});
 });
 
 // Event flip card área conhecimento
@@ -31,15 +29,25 @@ $(function() {
 });
 
 //Evento drop down área conhecimentos
-$(document).on("click", ".panel-heading span.pressionado", function(e){
+$(document).on("click", ".card-title", function(e){
     var $this = $(this);
-	if(!$this.hasClass("panel-collapsed")) {
-		$this.parents(".panel").find(".panel-body").slideUp();
-		$this.addClass("panel-collapsed");
+	if(!$this.hasClass("collapsed")) {
+		$this.parents(".card").find(".card-body").slideUp();
+		$this.addClass("collapsed");
 		$this.find("i").removeClass("fa fa-chevron-up").addClass("fa fa-chevron-down");
 	} else {
-		$this.parents(".panel").find(".panel-body").slideDown();
-		$this.removeClass("panel-collapsed");
+		$this.parents(".card").find(".card-body").slideDown();
+		$this.removeClass("collapsed");
+		$this.find("i").removeClass("fa fa-chevron-down").addClass("fa fa-chevron-up");
+	}
+});
+
+//Evento drop down área conhecimentos itens internos
+$(document).on("click", ".toggle", function(e){
+    var $this = $(this);
+	if(!$this.hasClass("collapsed")) {
+		$this.find("i").removeClass("fa fa-chevron-up").addClass("fa fa-chevron-down");
+	} else {
 		$this.find("i").removeClass("fa fa-chevron-down").addClass("fa fa-chevron-up");
 	}
 });

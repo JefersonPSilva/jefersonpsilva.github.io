@@ -1,8 +1,5 @@
-#contato{
-	background-color: #535c68;
-	height: 100%;
-	padding: 20px 30px; 
-	min-height: 100vh;
+.bg-contato{
+	background-color: #212529;
 }
 
 .form-line{
@@ -14,7 +11,6 @@
 .contato-right h3, 
 .contato-right h4{
 	font-size: 15pt;
-	/*color: #FFFFFF;*/	
 	font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
 	justify-content: space-between;
 	letter-spacing:0.1em;

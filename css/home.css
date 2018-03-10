@@ -3,11 +3,6 @@ body {
     position: absolute;
 }
 
-#cabecalho{
-	background-color: #535c68;
-	height: 100%;
-}
-
 #menu ul li a, #menu a{
 	font-size: 20pt;
 	font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
