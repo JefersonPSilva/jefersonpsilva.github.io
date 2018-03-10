@@ -1,11 +1,13 @@
 $(document).ready(function() {
-	//Tecnica para deslizar ao clicar no href :target com coldown de 1s
-	var $doc = $("html, body");
-	$(".scrollSuave").click(function() {
-	    $doc.animate({
-	        scrollTop: $( $.attr(this, "href")).offset().top
-	    }, 1000);
-	    return false;
+	//Tecnica para scroll suave para link interno
+	$('.nav a[href^="#"]').on('click', function(e) {
+		e.preventDefault();
+		var id = $(this).attr('href'),
+				targetOffset = $(id).offset().top;
+				
+		$('html, body').animate({ 
+			scrollTop: targetOffset - 55
+		}, 800);
 	});
 	
 	// Evento drop down área conhecimento, itens especificos
@@ -16,16 +18,10 @@ $(document).ready(function() {
         $target.slideToggle();
     });	
 
-	$(".box").on("click", function(){
-		$(".box").toggleClass("flipped");
+    //flip container on click
+	$(".flip-container").on("click", function(){
+		$(this).toggleClass("flip");
 	});
-});
-
-// Event flip card área conhecimento
-$(function() {
-    $("div.flipcard").on("click", function(evt) {
-       $(this).toggleClass("flip");
-    });
 });
 
 //Evento drop down área conhecimentos

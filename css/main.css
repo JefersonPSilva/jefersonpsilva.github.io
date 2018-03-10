@@ -12,8 +12,11 @@
 body{
 	padding-top: 72px;
 }
-hr{
-	height: 6px;
-	background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
-    border: 0;
+
+hr.hr-one {
+padding: 0;
+border: none;
+border-top: medium double #FFFFFF;
+color: #FFFFFF;
+text-align: center;
 }

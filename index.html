@@ -13,7 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="css/modules/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 
-	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/home.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/sobre.css">
 	<link rel="stylesheet" type="text/css" href="css/conhecimento.css">
 	<link rel="stylesheet" type="text/css" href="css/contato.css">
@@ -36,952 +36,975 @@
 		<script src="js/html5shiv.js"></script>
 	<![endif]-->
 </head>
-<!--bootstrap plugin scrollpsy-->
-<body data-spy="scroll" data-target=".navbar" data-offset="50" id="home">
-	<div class="container-fluid">
-		<header>
-			<div class="row" id="cabecalho">
-				<div class="">
-					<h1 class="text-center titulo">Jeferson P. da Silva</h1>
-					<h2 class="text-center subtitulo">Desenvolvedor Web PHP Júnior / Java Web Júnior / Fron-End Júnior</h2>
+<body>
+	<header class="container-fluid bg-dark">
+		<!-- padding top 72px equivalente a nav fixed -->
+		<div class="row align-items-center" style="height: 90vh;">
+			<div class="my-5 mx-auto">
+				<div class="text-white my-5 border border-light p-5">
+					<h1 class="align-middle text-center titulo">Jeferson P. da Silva</h1>
+					<h2 class="align-middle subtitulo">Desenvolvedor Web PHP Júnior / Java Web Júnior / Fron-End Júnior</h2>
 				</div>
 			</div>
-			<div class="row" id="menu">
-				<!-- menu fixed bootstrap psy plugin -->
-				<!-- não foi definido colunas pois o plugin realiza este trabalho -->
-				<nav class="navbar navbar-inverse navbar-fixed-top">
-				  	<div class="container-fluid">
-					    <div class="navbar-header">
-					        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menuNavBar">
-					          	<span class="icon-bar"></span>
-					          	<span class="icon-bar"></span>
-					          	<span class="icon-bar"></span>                        
-					      	</button>
-					      	<a class="navbar-brand" href="#home">Home</a>
-					    </div>
-					    <div>
-					      	<div class="collapse navbar-collapse" id="menuNavBar">
-						        <ul class="nav navbar-nav">
-						          	<li><a href="#sobre" class="scrollSuave">Sobre</a></li>
-						          	<li><a href="#experiencia" class="scrollSuave">Experiência</a></li>
-						          	<li><a href="#portfolio" class="scrollSuave">Portfólio</a></li>
-						          	<li><a href="#conhecimento" class="scrollSuave">Conhecimentos</a></li>
-						          	<li><a href="#contato" class="scrollSuave">Contato</a></li>
-						        </ul>
-					      	</div>
-					    </div>
-				  	</div>
-				</nav> 
+		</div>
+	</header><!-- /header -->
+	<nav class="navbar navbar-expand-md fixed-top bg-light navbar-dark py-3">
+		<!-- ICON BRAND MENU -->
+		<a href="index.html" class="navbar-brand text-primary">
+			PORTFÓLIO
+		</a>
+		<!-- NAV MENU -->
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="nav navbar-nav ml-auto">
+				<li class="nav-item"><a class="btn btn-outline-dark ml-md-3 scrollSuave" href="#sobre">SOBRE</a></li>
+				<li class="nav-item"><a class="btn btn-outline-dark ml-md-3 scrollSuave" href="#experiencia">EXPERIÊNCIA</a></li>
+				<li class="nav-item"><a class="btn btn-outline-dark ml-md-3 scrollSuave" href="#portfolio">PORTFÓLIO</a></li>
+				<li class="nav-item"><a class="btn btn-outline-dark ml-md-3 scrollSuave" href="#conhecimento">CONHECIMENTOS</a></li>
+				<li class="nav-item"><a class="btn btn-outline-dark ml-md-3 scrollSuave" href="#contato">CONTATO</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- seção sobre -->
+	<section class="container-fluid bg-sobre text-white" id="sobre">
+		<p class="h1 pt-3 text">SOBRE</p>
+		<hr class="hr-one">
+		<div class="row">
+			<div class="col-md-4">
+				<img src="img/eu.png" class="img-thumbnail m-5	" height="200px" width="200px" alt="Foto Jeferson Pereira" />
 			</div>
-		</header>
-		<main>
-			<div class="row" id="sobre">
-				<section>
-					<div class="col-md-4 col-sm-4 col-xl-4 col-lg-4 img-itsme">
-						<img src="img/eu.png" width="200px" height="200px" class="img-thumbnail img-responsive center-block" alt="Foto Jeferson Pereira" />
+			<div class="col-md-8 col-sm-8 col-xl-8 col-lg-8">
+				<article class="my-5">
+					<hgroup >
+						<h3 class="titulo">Jeferson Pereira</h3>
+						<p class="subtitulo">Desenvolvedor Web PHP Júnior / Java Web Júnior / Fron-End Júnior</p>
+					</hgroup>
+					<aside class="texto-informacao">
+						<p>
+							Tenho 23 anos, sou solteiro e apaixonado por desenvolvimento e tecnologia. Desenvolvedor júnior, tenho dois anos de experiência com desenvolvimento e a quatro anos trabalho na área de tecnologia da informação. Já participei do desenvolvimento de sistema ERP, WEBs e Geoprocessamento de dados, além de alguns projetos para faculdade e cursos realizados, estudante do Curso de Ciência da Computação.
+						</p>
+						<p>
+							Assim como a tecnologia sempre estou me atualizando e adquirindo mais conhecimentos. Sou rápido para aprender novas tecnologias, sempre buscando a melhor forma de usá-las.
+						</p>
+						<blockquote class="blockquote">
+							  	<p class="mb-0">Nunca me chamaram de um cara legal. Estou em algum lugar entre os geeks e normais.</p>
+							  	<footer class="blockquote-footer">
+							  		Linus Torvalds.
+							  	</footer>
+						</blockquote>
+					</aside>
+				</article>
+				<h4>HOBBIES &amp; INTERESSES</h4>
+				<div class="row">
+					<div class="col-md-2 px-auto">
+                        <p class="float-left"><i class="fa fa-video-camera fa-3x"></i><br><span>Cinema</span></p>	
+					</div> 
+					<div class="col-md-2">
+						<p class="float-left"><i class="fa fa-code fa-3x"></i><br><span>Programar</span></p>	
 					</div>
-					<div class="col-md-8 col-sm-8 col-xl-8 col-lg-8">
-						<article>
-							<p class="titulo">Sobre</p>
-							<hgroup class="subtitulo">
-								<h2>Jeferson Pereira</h2>
-								<h3>Desenvolvedor Web PHP Júnior / Java Web Júnior / Fron-End Júnior</h3>
-							</hgroup>
-							<aside>
-								<p class="texto-informacao">
-									Tenho 23 anos, sou solteiro e apaixonado por desenvolvimento e tecnologia. Desenvolvedor júnior, tenho dois anos de experiência com desenvolvimento e a quatro anos trabalho na área de tecnologia da informação. Já participei do desenvolvimento de sistema ERP, WEBs e Geoprocessamento de dados, além de alguns projetos para faculdade e cursos realizados, estudante do Curso de Ciência da Computação.
-								</p>
-								<p class="texto-informacao">
-									Assim como a tecnologia sempre estou me atualizando e adquirindo mais conhecimentos. Sou rápido para aprender novas tecnologias, sempre buscando a melhor forma de usá-las.
-								</p>
-								<blockquote class="blockquote">
-									  	<p class="mb-0">Nunca me chamaram de um cara legal. Estou em algum lugar entre os geeks e normais.</p>
-									  	<footer class="blockquote-footer">
-									  		Linus Torvalds.
-									  		<!--<cite title="Fonte Titulo">Fonte Titulo</cite>-->
-									  	</footer>
-								</blockquote>
-							</aside>
-						</article>
-						<div class="row">
-							<h4>HOBBIES &amp; INTERESSES</h4>
-							<div class="col-md-2 col-sm-2 col-xl-2 col-lg-2">
-                                <p class="pull-left"><i class="fa fa-video-camera fa-3x"></i><br><span>Cinema</span></p>	
-							</div> 
-							<div class="col-md-2 col-sm-2 col-xl-2 col-lg-2">
-								<p class="pull-left"><i class="fa fa-code fa-3x"></i><br><span>Programar</span></p>	
-							</div>
-							<div class="col-md-2 col-sm-2 col-xl-2 col-lg-2">
-								<p class="pull-left"><i class="fa fa-gamepad fa-3x"></i><br><span>Jogos</span></p>		
-							</div>
-							<div class="col-md-2 col-sm-2 col-xl-2 col-lg-2">
-								<p class="pull-left"><i class="fa fa-steam-square fa-3x"></i><br><span>Steam</span></p>
-							</div>
-							<div class="col-md-2 col-sm-2 col-xl-2 col-lg-2">
-								<p class="pull-left"><i class="fa fa-headphones fa-3x"></i><br><span>Música</span></p>
-							</div>
-							<div class="col-md-2 col-sm-2 col-xl-2 col-lg-2">
-								<!--Completar as 12 colunas-->	
-							</div>
+					<div class="col-md-2">
+						<p class="float-left"><i class="fa fa-gamepad fa-3x"></i><br><span>Jogos</span></p>		
+					</div>
+					<div class="col-md-2">
+						<p class="float-left"><i class="fa fa-steam-square fa-3x"></i><br><span>Steam</span></p>
+					</div>
+					<div class="col-md-2">
+						<p class="float-left"><i class="fa fa-headphones fa-3x"></i><br><span>Música</span></p>
+					</div>
+					<!-- 12 colunas -->
+					<div class="col-auto">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!--end seção sobre-->
+	<!-- seção experiência -->
+	<section class="container-fluid bg-experiencia text-white" id="experiencia">
+		<p class="h1 pt-3">EXPERIÊNCIA</p>
+		<hr class="hr-one">
+		<div class="row">
+	    	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
+	    		<div class="row text-center d-block">
+					<a class="btn btn-light btn-lg" style="color: #000">Profissional</a>
+				</div>
+	    		<ul class="timeline">
+			        <li>
+			          	<div class="timeline-badge bg-dark"><i class="fa fa-check"></i></div>
+			          	<div class="timeline-panel">
+				            <div class="timeline-heading">
+				              	<h4 class="timeline-title">IMB - Instituto Mauro Borges de Estatística e Estudos Socioeconômicos</h4>
+				              	<p><small><i class="fa fa-calendar"></i> Agosto/2017 - Até o momento.</small></p>
+				            </div>
+				            <div class="timeline-body">
+				            	<h5><strong>Cargo:</strong> Estagiário Desenvolvedor Web Full Stack.</h5>
+				             	<p><strong>Principais Atividades:</strong> Correções e implementações de funções nos sistemas WEBs de geoprocessamentos de imagens e dados geoespaciais, configuração do servidor Apache, gerenciamento de dados Geoespaciais no Bando de Dados(PostgreSQL), atualização e gerenciamento de conteúdo no site do instituto.</p>
+				            </div>
+			          	</div>
+			        </li>
+			        <li class="timeline-inverted">
+			          	<div class="timeline-badge bg-dark"><i class="fa fa-check"></i></div>
+			          	<div class="timeline-panel">
+				            <div class="timeline-heading">
+				              	<h4 class="timeline-title">Datrys Sistemas</h4>
+				              	<p><small><i class="fa fa-calendar"></i> Maio/2017 - Julho/2017</small></p>
+				            </div>
+				            <div class="timeline-body">
+				            	<h5><strong>Cargo:</strong> Estagiário Desenvolvedor Delphi XE2/Java</h5>
+				              	<p><strong>Principais Atividades:</strong> Correções de funções do software ERP com linguagem Delphi XE2, desenvolvimento de novas opções no software de suporte ao cliente com linguagem JAVA, elaboração de relatórios com FastReport/Delphi para implementação no software ERP, atendimento aos usuários do sistema, identificação e correção de erros no sistema por conexão remova via TeamViewer/Máquina Virtual(Virtual Box).</p>
+				            </div>
+			          	</div>
+			        </li>
+			        <li>
+			          	<div class="timeline-badge bg-dark"><i class="fa fa-check"></i></div>
+			          	<div class="timeline-panel">
+				            <div class="timeline-heading">
+				              	<h4 class="timeline-title">SUJUV - Superintendência da Juventude</h4>
+				              	<p><small><i class="fa fa-calendar"></i> Novembro/2016 - Janeiro/2017</small></p>
+				            </div>
+				            <div class="timeline-body">
+				              	<h5><strong>Cargo: Estagiário Voluntário Desenvolvedor JAVA Web</strong> </h5>
+				              	<p><strong>Principais Atividades:</strong> Realização de testes unitários, correções de validações em formulários, auxiliar no desenvolvimento do sistema web, controle e manipulação das dependências do projeto.</p>
+				            </div>
+			          	</div>
+			        </li>
+			        <li class="timeline-inverted">
+			        	<div class="timeline-badge bg-dark"><i class="fa fa-check"></i></div>
+			          	<div class="timeline-panel">
+				            <div class="timeline-heading">
+				              	<h4 class="timeline-title">SEGOV – Secretaria de Estado de Governo</h4>
+			              		<p><small><i class="fa fa-calendar"></i> Fevereiro/2016 - Abril/2017</small></p>
+				            </div>
+				            <div class="timeline-body">
+				              	<h5><strong>Cargo: Estagiário Suporte T.I</strong> </h5>
+			              		<p><strong>Principais Atividades:</strong> Administração de usuários no Active Directory, controle de
+								permissão de acesso à rede, montagem e manutenção, instalação de software, controle de acesso no sistema interno da secretária, controle de cotas no servidor de arquivos, configuração e instalação de impressoras, atendimento aos usuários.</p>
+				            </div>
+			          	</div>
+			        </li>
+			    </ul><!--end time line-->	
+	    	</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
+				<div class="row text-center d-block">
+					<a class="btn btn-light btn-lg" style="color: #000">Acadêmica</a>
+				</div>
+		    	<ul class="timeline">
+			        <li class="timeline-inverted">
+			          	<div class="timeline-badge bg-dark"><i class="fa fa-check"></i></div>
+			          	<div class="timeline-panel">
+				            <div class="timeline-heading">
+				              	<h4 class="timeline-title">Bacharelado em Ciência da Computação 7º Período</h4>
+				              	<p><small><i class="fa fa-calendar"></i> Janeiro/2015 - Até o momento.</small></p>
+				            </div>
+				            <div class="timeline-body">
+				            	<h5><strong>Instituição:</strong> UNIP - Universidade Paulista.</h5>
+				            </div>
+			          	</div>
+			        </li>
+			        <li>
+			          	<div class="timeline-badge bg-dark"><i class="fa fa-check"></i></div>
+			          	<div class="timeline-panel">
+				            <div class="timeline-heading">
+				              	<h4 class="timeline-title">Curso Modelagem de Processamentos no QGIS</h4>
+				              	<p><small><i class="fa fa-calendar"></i> 19/02/2018 - 22/02/2018.</small></p>
+				            </div>
+				            <div class="timeline-body">
+				            	<h5><strong>Instituição:</strong> Escola de Governo.</h5>
+				            </div>
+			          	</div>
+			        </li>
+			        <li class="timeline-inverted">
+			          	<div class="timeline-badge bg-dark"><i class="fa fa-check"></i></div>
+			          	<div class="timeline-panel">
+				            <div class="timeline-heading">
+				              	<h4 class="timeline-title">Mini Curso UML - Software Astah Community </h4>
+				              	<p><small><i class="fa fa-calendar"></i> Semtembro/2016 - Semtembro/2016</small></p>
+				            </div>
+				            <div class="timeline-body">
+				            	<h5><strong>Instituição:</strong> UNIP - Universidade Paulista.</h5>
+				            </div>
+			          	</div>
+			        </li>
+			        <li>
+			          	<div class="timeline-badge bg-dark"><i class="fa fa-check"></i></div>
+			          	<div class="timeline-panel">
+				            <div class="timeline-heading">
+				              	<h4 class="timeline-title">Curso de Controle de Versão com Git, GitHub</h4>
+				              	<p><small><i class="fa fa-calendar"></i> Março/2017 - Março/2017</small></p>
+				            </div>
+				            <div class="timeline-body">
+				              	<h5><strong>Instituição:</strong> Udemy Online Courses.</h5>
+				            </div>
+			          	</div>
+			        </li>
+			        <li class="timeline-inverted">
+			        	<div class="timeline-badge bg-dark"><i class="fa fa-check"></i></div>
+			          	<div class="timeline-panel">
+				            <div class="timeline-heading">
+				              	<h4 class="timeline-title">Curso Técnico em Help Desk</h4>
+			              		<p><small><i class="fa fa-calendar"></i> Agosto/2014 - Novembro/2014</small></p>
+				            </div>
+				            <div class="timeline-body">
+				              	<h5><strong>Instituição:</strong> SINE - Sistema Nacional de Emprego.</h5>
+				            </div>
+			          	</div>
+			        </li>
+			    </ul><!--end time line-->
+		    </div>
+		</div>
+	</section><!--end seção experiência-->
+	<!-- seção portfólio -->
+	<section class="container-fluid bg-portfolio" id="portfolio">
+		<p class="h1 pt-3">PORTFÓLIO</p>
+		<hr class="hr-one">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="flip-container mb-3 card-box bg-light">
+					<div class="flipper box-shadow">
+						<div class="front p-4 text-center">
+							<img src="img/bde.png" class="img-fluid card-img rounded" alt="Imagem Manutenção">
+							<p>SIEG - Sistema Estadual de Geoinformação de Goiás</p>
+							<p>BDE Goiás</p>
+							<button type="button" id="card-detail" class="btn btn-outline-info">Detalhes</button>
+						</div>
+						<div class="back p-4 text-justify">
+							<p><strong>Recursos:</strong> JavaScript, JQuery, Ajax, PHP 7, HTML5, Bootstrap 3, Leaflet, CSS, PostgreSQL+PostGis, ChartJS</p>
+							<p><strong>O que foi desenvolvido?</strong>
+							Reformulado menu de consulta a informações estatísticas de Goiás, implementado novo designer ao site, implementado banco de dados, adicionado validações, área de impressão do mapa, interatividade com o mapa.</p>
+							<a href="http://www.sieg.go.gov.br/bdegeo/" target="blank">Olhe o site aqui...</a>
+							<br>
+							<button type="button" class="btn btn btn-outline-info float-right">Voltar</button>
 						</div>
 					</div>
-				</section>
-			</div><!--end área sobre-->
-			<div class="row" id="experiencia">
-				<section>
-					<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
-					    <!--Experiência Profissional-->
-					    <div class="row">
-					    	<div class="col-md-5 col-sm-5 col-xl-5 col-lg-5"></div>
-					    	<div class="col-md-2 col-sm-2 col-xl-2 col-lg-2">
-				    			<a href="#experiencia" class="btn btnTitulo scrollSuave">Profissional</a>
-					    	</div>
-					    	<div class="col-md-5 col-sm-5 col-xl-5 col-lg-5"></div>
-					    </div>
-					    <div class="row">
-					    	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
-					    		<ul class="timeline">
-							        <li>
-							          	<div class="timeline-badge vAlign"><i class="glyphicon glyphicon-check"></i></div>
-							          	<div class="timeline-panel">
-								            <div class="timeline-heading">
-								              	<h4 class="timeline-title">IMB - Instituto Mauro Borges de Estatística e Estudos Socioeconômicos</h4>
-								              	<p><small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> Agosto/2017 - Até o momento.</small></p>
-								            </div>
-								            <div class="timeline-body">
-								            	<h5><strong>Cargo:</strong> Estagiário Desenvolvedor Web Full Stack.</h5>
-								             	<p><strong>Principais Atividades:</strong> Correções e implementações de funções nos sistemas WEBs de geoprocessamentos de imagens e dados geoespaciais, configuração do servidor Apache, gerenciamento de dados Geoespaciais no Bando de Dados(PostgreSQL), atualização e gerenciamento de conteúdo no site do instituto.</p>
-								            </div>
-							          	</div>
-							        </li>
-							        <li class="timeline-inverted">
-							          	<div class="timeline-badge warning vAlign"><i class="glyphicon glyphicon-check"></i></div>
-							          	<div class="timeline-panel">
-								            <div class="timeline-heading">
-								              	<h4 class="timeline-title">Datrys Sistemas</h4>
-								              	<p><small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> Maio/2017 - Julho/2017</small></p>
-								            </div>
-								            <div class="timeline-body">
-								            	<h5><strong>Cargo:</strong> Estagiário Desenvolvedor Delphi XE2/Java</h5>
-								              	<p><strong>Principais Atividades:</strong> Correções de funções do software ERP com linguagem Delphi XE2, desenvolvimento de novas opções no software de suporte ao cliente com linguagem JAVA, elaboração de relatórios com FastReport/Delphi para implementação no software ERP, atendimento aos usuários do sistema, identificação e correção de erros no sistema por conexão remova via TeamViewer/Máquina Virtual(Virtual Box).</p>
-								            </div>
-							          	</div>
-							        </li>
-							        <li>
-							          	<div class="timeline-badge danger vAlign"><i class="glyphicon glyphicon-check"></i></div>
-							          	<div class="timeline-panel">
-								            <div class="timeline-heading">
-								              	<h4 class="timeline-title">SUJUV - Superintendência da Juventude</h4>
-								              	<p><small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> Novembro/2016 - Janeiro/2017</small></p>
-								            </div>
-								            <div class="timeline-body">
-								              	<h5><strong>Cargo: Estagiário Voluntário Desenvolvedor JAVA Web</strong> </h5>
-								              	<p><strong>Principais Atividades:</strong> Realização de testes unitários, correções de validações em formulários, auxiliar no desenvolvimento do sistema web, controle e manipulação das dependências do projeto.</p>
-								            </div>
-							          	</div>
-							        </li>
-							        <li class="timeline-inverted">
-							        	<div class="timeline-badge info vAlign"><i class="glyphicon glyphicon-check"></i></div>
-							          	<div class="timeline-panel">
-								            <div class="timeline-heading">
-								              	<h4 class="timeline-title">SEGOV – Secretaria de Estado de Governo</h4>
-							              		<p><small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> Fevereiro/2016 - Abril/2017</small></p>
-								            </div>
-								            <div class="timeline-body">
-								              	<h5><strong>Cargo: Estagiário Suporte T.I</strong> </h5>
-							              		<p><strong>Principais Atividades:</strong> Administração de usuários no Active Directory, controle de
-												permissão de acesso à rede, montagem e manutenção, instalação de software, controle de acesso no sistema interno da secretária, controle de cotas no servidor de arquivos, configuração e instalação de impressoras, atendimento aos usuários.</p>
-								            </div>
-							          	</div>
-							        </li>
-							    </ul><!--end time line-->	
-					    	</div>
-					    </div>
-
-					    <!--Experiência Academica-->
-					    <div class="row">
-					    	<div class="col-md-5 col-sm-5 col-xl-5 col-lg-5"></div>
-					    	<div class="col-md-2 col-sm-2 col-xl-2 col-lg-2">
-				    			<a href="#experiencia" class="btn btnTitulo scrollSuave">Acadêmica</a>
-					    	</div>
-					    	<div class="col-md-5 col-sm-5 col-xl-5 col-lg-5"></div>
-					    </div>
-					    <div class="row">
-						    <div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
-						    	<ul class="timeline">
-							        <li>
-							          	<div class="timeline-badge vAlign"><i class="glyphicon glyphicon-check"></i></div>
-							          	<div class="timeline-panel">
-								            <div class="timeline-heading">
-								              	<h4 class="timeline-title">Bacharelado em Ciência da Computação 7º Período</h4>
-								              	<p><small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> Janeiro/2015 - Até o momento.</small></p>
-								            </div>
-								            <div class="timeline-body">
-								            	<h5><strong>Instituição:</strong> UNIP - Universidade Paulista.</h5>
-								            </div>
-							          	</div>
-							        </li>
-							        <li class="timeline-inverted">
-							          	<div class="timeline-badge warning vAlign"><i class="glyphicon glyphicon-check"></i></div>
-							          	<div class="timeline-panel">
-								            <div class="timeline-heading">
-								              	<h4 class="timeline-title">Mini Curso UML - Software Astah Community </h4>
-								              	<p><small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> Semtembro/2016 - Semtembro/2016</small></p>
-								            </div>
-								            <div class="timeline-body">
-								            	<h5><strong>Instituição:</strong> UNIP - Universidade Paulista.</h5>
-								            </div>
-							          	</div>
-							        </li>
-							        <li>
-							          	<div class="timeline-badge danger vAlign"><i class="glyphicon glyphicon-check"></i></div>
-							          	<div class="timeline-panel">
-								            <div class="timeline-heading">
-								              	<h4 class="timeline-title">Curso de Controle de Versão com Git, GitHub</h4>
-								              	<p><small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> Março/2017 - Março/2017</small></p>
-								            </div>
-								            <div class="timeline-body">
-								              	<h5><strong>Instituição:</strong> Udemy Online Courses.</h5>
-								            </div>
-							          	</div>
-							        </li>
-							        <li class="timeline-inverted">
-							        	<div class="timeline-badge info vAlign"><i class="glyphicon glyphicon-check"></i></div>
-							          	<div class="timeline-panel">
-								            <div class="timeline-heading">
-								              	<h4 class="timeline-title">Curso Técnico em Help Desk</h4>
-							              		<p><small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> Agosto/2014 - Novembro/2014</small></p>
-								            </div>
-								            <div class="timeline-body">
-								              	<h5><strong>Instituição:</strong> SINE - Sistema Nacional de Emprego.</h5>
-								            </div>
-							          	</div>
-							        </li>
-							    </ul><!--end time line-->
-						    </div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="flip-container mb-3 card-box bg-light">
+					<div class="flipper box-shadow">
+						<div class="front p-4 text-center">
+							<img src="img/atlas_emater.png" class="img-fluid card-img rounded" alt="Imagem Manutenção">
+							<p>SIEG - Sistema Estadual de Geoinformação de Goiás</p>
+							<p>Emater - Atlas Agropecuário</p>
+							<button type="button" id="card-detail" class="btn btn-outline-info">Detalhes</button>
 						</div>
-			    	</div>
-			    </section>
-			</div><!--end área experiencia-->
-			<div class="row" id="portfolio">
-				<section>
-					<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
-						<div class="row">
-							<div class="col-md-4 col-sm-4 col-xl-4 col-lg-4">
-								<div class="flipcard">
-							        <div class="front text-center">
-							          	<div class="top-bit">
-											<div class="row">
-												<div class="col-xs-12">
-													IMB - Instituto Mauro Borges de Estatísticas e Estudos Socioeconômicos
-												</div>
-												<div class="col-xs-12">
-													<h3 style="margin: 10px 0;">BDE - Banco de Dados Estatísticos de Goiás</h3>
-												</div>
-											</div>
-							        	</div>
-							        	<div class="middle-bit">
-											<div class="row">
-												<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-													<!-- conteudo -->
-												</div>
-											</div>
-										</div>
-										<div class="end-bit">
-											<div class="row">
-												<div class="col-xs-12">
-													<button id="btnDetalhe" type="button" class="btn" data-plan="btnDetalhe" data-target="#">Detalhes</button>
-												</div>
-											</div>
-										</div>
-							        </div><!--end front card-->
-							        <div class="back">
-							           	<div style="border-bottom: 1px solid #3d3d3d;" class="top-bit">
-											<div class="row">
-												<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-													<span class="fa-stack fa-2x">
-														<span class="fa fa-circle fa-stack-2x icon-background4"></span>
-														<span class="fa fa-circle-thin fa-stack-2x icon-background6"></span>
-														<span class="off-grey fa fa-crosshairs fa-stack-1x"></span>
-													</span>
-												</div>
-												<div class="col-xs-6 col-sm-6 col-md-9 col-lg-9 text-center">
-													<!-- img capa front-->
-												</div>
-											</div>
-										</div>
-										<div style="border-bottom: 1px solid #3d3d3d; min-height: 192px;" class="row collapse in">
-											<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-												<div class="middle-bit demure-font cards-rear text-center">
-													<!-- title front-->
-													<div style="margin-bottom: 8px;" class="row">
-														<div class="col-xs-12 pc-text plan-suumary">
-															<!-- texto  front-->
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="end-bit">
-											<div class="row">
-												<div class="col-xs-12">
-													<!-- button front -->
-													<button id="btnVoltar" type="button" class="btn" data-plan="btnVoltar" data-target="#">Voltar</button>
-												</div>
-											</div>
-										</div>
-							        </div><!--end back card-->
-						    	</div>
-							</div>
-							<div class="col-md-4 col-sm-4 col-xl-4 col-lg-4"></div>
-							<div class="col-md-4 col-sm-4 col-xl-4 col-lg-4"></div>
-						</div><!--end row-->
-					</div><!--end col-->
-				</section>
-			</div><!--end área portfolio-->
-			<div class="row" id="conhecimento">
-				<section>
-					<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
-						<div class="row">
-							<!--Header Time Line-->
-							<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
-								<div class="page-header">
-							        <h1 id="timeline">Conhecimentos</h1>
-							    </div>
-							</div>
+						<div class="back p-4 text-justify">
+							<p><strong>Recursos:</strong> JavaScript, JQuery, Ajax, PHP 7, HTML5, Bootstrap 3, Leaflet, CSS, PostgreSQL+PostGis, ChartJS</p>
+							<p><strong>O que foi desenvolvido?</strong>
+							Implementado novo visual ao site, adicionado validações, área de impressão do mapa, interatividade com o mapa.</p>
+							<a href="http://www.sieg.go.gov.br/atlasagro/" target="blank">Olhe o site aqui...</a>
+							<br>
+							<button type="button" class="btn btn btn-outline-info float-right">Voltar</button>
 						</div>
-						<!--Obs.: Passar um número para cada ul li-->
-						<!--Devido ao evento de collapse interno-->
-						<div class="row">
-							<div class="col-md-6 col-sm-6 col-xl-6 col-lg-6">
-								<div class="panel panel-primary">
-									<div class="panel-heading">
-										<h3 class="panel-title">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="flip-container mb-3 card-box bg-light">
+					<div class="flipper box-shadow">
+						<div class="front p-4 text-center">
+							<img src="img/sieg.png" class="img-fluid card-img rounded" alt="Imagem Manutenção">
+							<p>SIEG - Sistema Estadual de Geoinformação de Goiás</p>
+							<p>SIEG Downloads</p>
+							<button type="button" id="card-detail" class="btn btn-outline-info">Detalhes</button>
+						</div>
+						<div class="back p-4 text-justify">
+							<p><strong>Recursos:</strong> JavaScript, JQuery, HTML5, Bootstrap 3, Leaflet, CSS.</p>
+							<p><strong>O que foi desenvolvido?</strong>
+							Reconstruido site com novo visual e recursos para melhorar desempenho, além de fácil atualização dos dados, manutenção de alguns links para o geoserver.</p>
+							<a href="http://www.sieg.go.gov.br/siegdownloads/" target="blank">Olhe o site aqui...</a>
+							<br>
+							<button type="button" class="btn btn btn-outline-info float-right">Voltar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="flip-container mb-3 card-box bg-light">
+					<div class="flipper box-shadow">
+						<div class="front p-4 text-center">
+							<img src="img/atlas.png" class="img-fluid card-img rounded" alt="Imagem Manutenção">
+							<p>IMB - Instituto Mauro Borges de  Estatística e Estudos Socioeconômicos</p>
+							<p>Atlas do Estado de Goiás</p>
+							<button type="button" id="card-detail" class="btn btn-outline-info">Detalhes</button>
+						</div>
+						<div class="back p-4 text-justify">
+							<p><strong>Recursos:</strong> JavaScript, JQuery, HTML5, Bootstrap 3, CSS.</p>
+							<p><strong>O que foi desenvolvido?</strong>
+							Refeito forma de visualizar arquivos do Atlas, a fim de melhorar desempenho.</p>
+							<a href="http://www.sieg.go.gov.br/rgg/atlas/index.html" target="blank">Olhe o site aqui...</a>
+							<br>
+							<button type="button" class="btn btn btn-outline-info float-right">Voltar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<div class="flip-container mb-3 card-box bg-light">
+					<div class="flipper box-shadow">
+						<div class="front p-4 text-center">
+							<img src="img/imb.png" class="img-fluid card-img rounded" alt="Imagem Manutenção">
+							<p>IMB - Instituto Mauro Borges de  Estatística e Estudos Socioeconômicos</p>
+							<p>Home Page IMB</p>
+							<button type="button" id="card-detail" class="btn btn-outline-info">Detalhes</button>
+						</div>
+						<div class="back p-4 text-justify">
+							<p><strong>Recursos:</strong> JavaScript, HTML, Bootstrap 3.</p>
+							<p><strong>O que foi desenvolvido?</strong>
+							Atualização de informações e manutenção de algumas funões.</p>
+							<a href="http://www.sieg.go.gov.br/bdegeo/" target="blank">Olhe o site aqui...</a>
+							<br>
+							<button type="button" class="btn btn btn-outline-info float-right mt-auto">Voltar</button>								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!--end seção portfólio-->
+	<!-- seção conhecimento -->
+	<section class="container-fluid bg-conhecimento" id="conhecimento">
+		<p class="h1 pt-3">CONHECIMENTOS</p>
+		<hr class="hr-one">
+		<div class="row">
+			<div class="col-md-12 px-4">
+				<!--Obs.: Passar um número para cada ul li-->
+				<!--Devido ao evento de collapse interno-->
+				<div class="row p-2 m-4">
+					<div class="col-md-6 col-sm-6 col-xl-6 col-lg-6">
+						<div class="card">
+						    <div class="card-header" role="tab" id="header-1">
+						      	<h5 class="mb-0">
+						      		<h3 class="card-title collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
 										Java
-										<span class="pull-right pressionado"><i class="glyphicon glyphicon-chevron-up"></i></span>
-										</h3>
-									</div>
-									<div class="panel-body">
-										<ul class="list-group">
-											<!--Item 3 detail-1 Apache Maven-->
-								            <li class="list-group-item">
-								                <div class="row toggle" id="dropdown-detail-1" data-toggle="detail-1">
-								                    <div class="col-xs-10">
-								                        Apache Maven
-								                    </div>
-								                    <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
-								                </div>
-								                <div id="detail-1">
-								                    <hr>
-								                    <div class="container box-conhecimento">
-								                        <div class="fluid-row">
-								                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
-								                        		<h5><strong>O que é?</strong></h5>
-								                            	<p>É uma ferramenta de automação de compilação é controle de dependências utilizada primariamente em projetos Java. No Apache Maven existem um monte de tarefas pré-definidas para serem utilizadas, chamadas goals, tudo configurado básicamente na unidade principal chamada pom.xml (Project Object Model).</p>
-								                            	<h5><strong>Experiência:</strong></h5>
-								                            	<p>Realização de instalação, configuração e controle de versionamento de dependências em projetos JAVA.</p>	
-								                        	</div>
-								                        </div>
-								                    </div>
-								                </div>
-								            </li><!--end li-->
-								        </ul><!--end ul-->
-									</div>
-								</div><!--end panel-->
-							</div><!--end col -->
-							<div class="col-md-6 col-sm-6 col-xl-6 col-lg-6">
-								<div class="panel panel-primary">
-									<div class="panel-heading">
-										<h3 class="panel-title">
+										<span class="float-right"><i class="fa fa-chevron-up"></i></span>
+									</h3>
+						      	</h5>
+						    </div>
+						    <div id="collapse-1" class="collapse" role="tabcard" aria-labelledby="header-1">
+							    <div class="card-block">
+							      	<ul class="list-group m-2">
+							            <li class="list-group-item">
+							                <div class="row toggle" id="dropdown-detail-1" data-toggle="detail-1">
+							                    <div class="col-10">
+							                        Apache Maven
+							                    </div>
+							                    <div class="col-2"><i class="fa fa-chevron-up float-right"></i></div>
+							                </div>
+							                <div id="detail-1">
+							                    <hr>
+							                    <div class="container box-conhecimento">
+							                        <div class="fluid-row">
+							                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
+							                        		<h5><strong>O que é?</strong></h5>
+							                            	<p>É uma ferramenta de automação de compilação é controle de dependências utilizada primariamente em projetos Java. No Apache Maven existem um monte de tarefas pré-definidas para serem utilizadas, chamadas goals, tudo configurado básicamente na unidade principal chamada pom.xml (Project Object Model).</p>
+							                            	<h5><strong>Experiência:</strong></h5>
+							                            	<p>Realização de instalação, configuração e controle de versionamento de dependências em projetos JAVA.</p>	
+							                        	</div>
+							                        </div>
+							                    </div>
+							                </div>
+							            </li><!--end li-->
+							        </ul><!--end ul-->
+							    </div>
+						    </div>
+						</div><!--end card-->
+					</div><!--end col -->
+					<div class="col-md-6 col-sm-6 col-xl-6 col-lg-6">
+						<div class="card">
+						    <div class="card-header" role="tab" id="header-2">
+						      	<h5 class="mb-0">
+						      		<h3 class="card-title collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
 										JavaScript
-										<span class="pull-right pressionado"><i class="glyphicon glyphicon-chevron-up"></i></span>
-										</h3>
-									</div>
-									<div class="panel-body">
-										<ul class="list-group">
-											<!--Item 3 detail-3 jQuery -->
-								            <li class="list-group-item">
-								                <div class="row toggle" id="dropdown-detail-2" data-toggle="detail-2">
-								                    <div class="col-md-10 col-sm-10 col-xl-10 col-lg-10">
-								                        Jquery
-								                    </div>
-								                    <div class="col-md-2 col-sm-2 col-xl-2 col-lg-2"><i class="fa fa-chevron-down pull-right"></i></div>
-								                </div>
-								                <div id="detail-2">
-								                    <hr>
-								                    <div class="container box-conhecimento">
-								                        <div class="fluid-row">
-								                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
-								                        		<h5><strong>O que é?</strong></h5>
-								                            	<p>JQuery é uma biblioteca de funções em JavaScript que interage com o HTML, desenvolvida para simplificar os scripts interpretados no navegador do usuário (Client-Side).</p>
-								                            	<h5><strong>Experiência:</strong></h5>
-								                            	<p>Desenvolvimento de eventos dinâmicos, manipulação de elementos HTML, criação de funções simplificadas.</p>	
-								                        	</div>
-								                        </div>
-								                    </div>
-								                </div><!--end detail-->
-								            </li><!--end li-->
-								            <!--Item 4 detail-4 Ajax-->
-								            <li class="list-group-item">
-								                <div class="row toggle" id="dropdown-detail-4" data-toggle="detail-4">
-								                    <div class="col-md-10 col-sm-10 col-xl-10 col-lg-10">
-								                        Ajax
-								                    </div>
-								                    <div class="col-md-2 col-sm-2 col-xl-2 col-lg-2"><i class="fa fa-chevron-down pull-right"></i></div>
-								                </div>
-								                <div id="detail-4">
-								                    <hr>
-								                    <div class="container box-conhecimento">
-								                        <div class="fluid-row">
-								                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
-								                        		<h5><strong>O que é?</strong></h5>
-								                            	<p>AJAX significa Asynchronous JavaScript e XML. É o uso do objeto XMLHttpRequest para se comunicar com os scripts do lado do servidor. Ele pode enviar bem como receber informações em uma variedade de formatos, incluindo JSON, XML, HTML, e até mesmo arquivos de texto. Porém a característica mais atraente do AJAX, é a sua natureza "assíncrona", o que significa que ele pode fazer tudo isso sem a necessidade de atualizar a página.</p>
-								                            	<h5><strong>Experiência:</strong></h5>
-								                            	<p>Manipulação de objetos JSON, manipulação de informações do Banco de Dados proveniente do PHP em Server-Side para o Client-Side, manipulação de dados Geoespaciais para aplicação em mapas interativos.</p>	
-								                        	</div>
-								                        </div>
-								                    </div>
-								                </div><!--end detail-->
-								            </li><!--end li-->
-								            <!--Item 5 detail-5 Lodash-->
-								            <li class="list-group-item">
-								                <div class="row toggle" id="dropdown-detail-5" data-toggle="detail-5">
-								                    <div class="col-md-10 col-sm-10 col-xl-10 col-lg-10">
-								                        Lodash
-								                    </div>
-								                    <div class="col-md-2 col-sm-2 col-xl-2 col-lg-2"><i class="fa fa-chevron-down pull-right"></i></div>
-								                </div>
-								                <div id="detail-5">
-								                    <hr>
-								                    <div class="container box-conhecimento">
-								                        <div class="fluid-row">
-								                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
-								                        		<h5><strong>O que é?</strong></h5>
-								                            	<p>Lodash é uma biblioteca JavaScript moderna que permite modularidade, desempenho, entre outras coisas, adiciona mais funcionalidades ao Javascript.</p>
-								                            	<h5><strong>Experiência:</strong></h5>
-								                            	<p>Manipulação é criação de Objetos Javascript, ajuda no desenvolvimento de funções javascript com seus métodos predefinidos.</p>	
-								                        	</div>
-								                        </div>
-								                    </div>
-								                </div><!--end detail-->
-								            </li><!--end li-->
-								            <!--Item 6 detail-6 Underscore-->
-								            <li class="list-group-item">
-								                <div class="row toggle" id="dropdown-detail-6" data-toggle="detail-6">
-								                    <div class="col-md-10 col-sm-10 col-xl-10 col-lg-10">
-								                        Underscore
-								                    </div>
-								                    <div class="col-md-2 col-sm-2 col-xl-2 col-lg-2"><i class="fa fa-chevron-down pull-right"></i></div>
-								                </div>
-								                <div id="detail-6">
-								                    <hr>
-								                    <div class="container box-conhecimento">
-								                        <div class="fluid-row">
-								                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
-								                        		<h5><strong>O que é?</strong></h5>
-								                            	<p>Underscore é uma pequena biblioteca de códigos utilitários voltados principalmente para a manipulação de estrutura de dados.</p>
-								                            	<h5><strong>Experiência:</strong></h5>
-								                            	<p>Manipulação é criação de Objetos Javascript, ajuda no desenvolvimento de funções javascript com seus métodos predefinidos.</p>	
-								                        	</div>
-								                        </div>
-								                    </div>
-								                </div><!--end detail-->
-								            </li><!--end li-->
-								        </ul>
-									</div>
-								</div>
-							</div><!--end col -->
-						</div><!--end row-->
-						<div class="row">
-							<div class="col-md-6 col-sm-6 col-xl-6 col-lg-6">
-								<div class="panel panel-primary">
-									<div class="panel-heading">
-										<h3 class="panel-title">
+										<span class="float-right"><i class="fa fa-chevron-up"></i></span>
+									</h3>
+						      	</h5>
+						    </div>
+						    <div id="collapse-2" class="collapse" role="tabcard" aria-labelledby="header-2">
+							    <div class="card-block">
+							      	<ul class="list-group m-2">
+							            <li class="list-group-item">
+							                <div class="row toggle" id="dropdown-detail-2" data-toggle="detail-2">
+							                    <div class="col-10">
+							                        Jquery
+							                    </div>
+							                    <div class="col-2"><i class="fa fa-chevron-up float-right"></i></div>
+							                </div>
+							                <div id="detail-2">
+							                    <hr>
+							                    <div class="container box-conhecimento">
+							                        <div class="fluid-row">
+							                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
+							                        		<h5><strong>O que é?</strong></h5>
+							                            	<p>JQuery é uma biblioteca de funções em JavaScript que interage com o HTML, desenvolvida para simplificar os scripts interpretados no navegador do usuário (Client-Side).</p>
+							                            	<h5><strong>Experiência:</strong></h5>
+							                            	<p>Desenvolvimento de eventos dinâmicos, manipulação de elementos HTML, criação de funções simplificadas.</p>	
+							                        	</div>
+							                        </div>
+							                    </div>
+							                </div>
+							            </li><!--end li-->
+							            <li class="list-group-item">
+							                <div class="row toggle" id="dropdown-detail-3" data-toggle="detail-3">
+							                    <div class="col-10">
+							                        Ajax
+							                    </div>
+							                    <div class="col-2"><i class="fa fa-chevron-up float-right"></i></div>
+							                </div>
+							                <div id="detail-3">
+							                    <hr>
+							                    <div class="container box-conhecimento">
+							                        <div class="fluid-row">
+							                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
+							                        		<h5><strong>O que é?</strong></h5>
+							                            	<p>AJAX significa Asynchronous JavaScript e XML. É o uso do objeto XMLHttpRequest para se comunicar com os scripts do lado do servidor. Ele pode enviar bem como receber informações em uma variedade de formatos, incluindo JSON, XML, HTML, e até mesmo arquivos de texto. Porém a característica mais atraente do AJAX, é a sua natureza "assíncrona", o que significa que ele pode fazer tudo isso sem a necessidade de atualizar a página.</p>
+							                            	<h5><strong>Experiência:</strong></h5>
+							                            	<p>Manipulação de objetos JSON, manipulação de informações do Banco de Dados proveniente do PHP em Server-Side para o Client-Side, manipulação de dados Geoespaciais para aplicação em mapas interativos.</p>	
+							                        	</div>
+							                        </div>
+							                    </div>
+							                </div>
+							            </li><!--end li-->
+							            <li class="list-group-item">
+							                <div class="row toggle" id="dropdown-detail-4" data-toggle="detail-4">
+							                    <div class="col-10">
+							                        Lodash
+							                    </div>
+							                    <div class="col-2"><i class="fa fa-chevron-up float-right"></i></div>
+							                </div>
+							                <div id="detail-4">
+							                    <hr>
+							                    <div class="container box-conhecimento">
+							                        <div class="fluid-row">
+							                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
+							                        		<h5><strong>O que é?</strong></h5>
+							                            	<p>Lodash é uma biblioteca JavaScript moderna que permite modularidade, desempenho, entre outras coisas, adiciona mais funcionalidades ao Javascript.</p>
+							                            	<h5><strong>Experiência:</strong></h5>
+							                            	<p>Manipulação é criação de Objetos Javascript, ajuda no desenvolvimento de funções javascript com seus métodos predefinidos.</p>	
+							                        	</div>
+							                        </div>
+							                    </div>
+							                </div>
+							            </li><!--end li-->
+							            <li class="list-group-item">
+							                <div class="row toggle" id="dropdown-detail-5" data-toggle="detail-5">
+							                    <div class="col-10">
+							                        Underscore
+							                    </div>
+							                    <div class="col-2"><i class="fa fa-chevron-up float-right"></i></div>
+							                </div>
+							                <div id="detail-5">
+							                    <hr>
+							                    <div class="container box-conhecimento">
+							                        <div class="fluid-row">
+							                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
+							                        		<h5><strong>O que é?</strong></h5>
+							                            	<p>Underscore é uma pequena biblioteca de códigos utilitários voltados principalmente para a manipulação de estrutura de dados.</p>
+							                            	<h5><strong>Experiência:</strong></h5>
+							                            	<p>Manipulação é criação de Objetos Javascript, ajuda no desenvolvimento de funções javascript com seus métodos predefinidos.</p>	
+							                        	</div>
+							                        </div>
+							                    </div>
+							                </div>
+							            </li><!--end li-->
+							        </ul><!--end ul-->
+							    </div>
+						    </div>
+						</div><!--end card-->
+					</div><!--end col -->
+				</div><!--end row-->
+				<div class="row p-2 m-4">
+					<div class="col-md-6 col-sm-6 col-xl-6 col-lg-6">
+						<div class="card">
+						    <div class="card-header" role="tab" id="header-3">
+						      	<h5 class="mb-0">
+						      		<h3 class="card-title collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
 										SQL
-										<span class="pull-right pressionado"><i class="glyphicon glyphicon-chevron-up"></i></span>
-										</h3>
-									</div>
-									<div class="panel-body">
-										<ul class="list-group">
-											<!--Item 7 detail-7 MySQL-->
-								            <li class="list-group-item">
-								                <div class="row toggle" id="dropdown-detail-7" data-toggle="detail-7">
-								                    <div class="col-xs-10">
-								                        MySQL
-								                    </div>
-								                    <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
-								                </div>
-								                <div id="detail-7">
-								                    <hr>
-								                    <div class="container box-conhecimento">
-								                        <div class="fluid-row">
-								                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
-								                        		<h5><strong>O que é?</strong></h5>
-								                            	<p>O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface.</p>
-								                            	<h5><strong>Experiência:</strong></h5>
-								                            	<p>Consultas avançadas é simples, inserção, remoção, atualização de dados.</p>
-								                        	</div>
-								                        </div>
-								                    </div>
-								                </div><!--end detail-->
-								            </li><!--end li-->
-								            <!--Item 8 detail-8 PostgreSQL-->
-								            <li class="list-group-item">
-								                <div class="row toggle" id="dropdown-detail-8" data-toggle="detail-8">
-								                    <div class="col-xs-10">
-								                        PostgreSQL
-								                    </div>
-								                    <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
-								                </div>
-								                <div id="detail-8">
-								                    <hr>
-								                    <div class="container box-conhecimento">
-								                        <div class="fluid-row">
-								                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
-								                        		<h5><strong>O que é?</strong></h5>
-								                            	<p>O PostgreSQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface.</p>
-								                            	<h5><strong>Experiência:</strong></h5>
-								                            	<p>Consultas avançadas é simples, inserção, remoção, atualização de dados.</p>
-								                        	</div>
-								                        </div>
-								                    </div>
-								                </div><!--end detail-->
-								            </li><!--end li-->
-								            <!--Item 9 detail-9 Firebird-->
-								            <li class="list-group-item">
-								                <div class="row toggle" id="dropdown-detail-9" data-toggle="detail-9">
-								                    <div class="col-xs-10">
-								                        Firebird
-								                    </div>
-								                    <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
-								                </div>
-								                <div id="detail-9">
-								                    <hr>
-								                    <div class="container box-conhecimento">
-								                        <div class="fluid-row">
-								                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
-								                        		<h5><strong>O que é?</strong></h5>
-								                            	<p>O Firebird é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface.</p>
-								                            	<h5><strong>Experiência:</strong></h5>
-								                            	<p>Consultas avançadas é simples, inserção, remoção, atualização de dados.</p>
-								                        	</div>
-								                        </div>
-								                    </div>
-								                </div><!--end detail-->
-								            </li><!--end li-->
-								        </ul><!--end ul-->
-									</div>
-								</div><!--end panel-->
-							</div><!--end col -->
-							<div class="col-md-6 col-sm-6 col-xl-6 col-lg-6">
-								<div class="panel panel-primary">
-									<div class="panel-heading">
-										<h3 class="panel-title">
+										<span class="float-right"><i class="fa fa-chevron-up"></i></span>
+									</h3>
+						      	</h5>
+						    </div>
+						    <div id="collapse-3" class="collapse" role="tabcard" aria-labelledby="header-3">
+							    <div class="card-block">
+							      	<ul class="list-group m-2">
+							            <li class="list-group-item">
+							                <div class="row toggle" id="dropdown-detail-6" data-toggle="detail-6">
+							                    <div class="col-10">
+							                        MySQL
+							                    </div>
+							                    <div class="col-2"><i class="fa fa-chevron-up float-right"></i></div>
+							                </div>
+							                <div id="detail-6">
+							                    <hr>
+							                    <div class="container box-conhecimento">
+							                        <div class="fluid-row">
+							                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
+							                        		<h5><strong>O que é?</strong></h5>
+							                            	<p>O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface.</p>
+							                            	<h5><strong>Experiência:</strong></h5>
+							                            	<p>Consultas avançadas é simples, inserção, remoção, atualização de dados.</p>	
+							                        	</div>
+							                        </div>
+							                    </div>
+							                </div>
+							            </li><!--end li-->
+							            <li class="list-group-item">
+							                <div class="row toggle" id="dropdown-detail-7" data-toggle="detail-7">
+							                    <div class="col-10">
+							                        PostgreSQL
+							                    </div>
+							                    <div class="col-2"><i class="fa fa-chevron-up float-right"></i></div>
+							                </div>
+							                <div id="detail-7">
+							                    <hr>
+							                    <div class="container box-conhecimento">
+							                        <div class="fluid-row">
+							                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
+							                        		<h5><strong>O que é?</strong></h5>
+							                            	<p>O PostgreSQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface.</p>
+							                            	<h5><strong>Experiência:</strong></h5>
+							                            	<p>Consultas avançadas é simples, inserção, remoção, atualização de dados.</p>	
+							                        	</div>
+							                        </div>
+							                    </div>
+							                </div>
+							            </li><!--end li-->
+							            <li class="list-group-item">
+							                <div class="row toggle" id="dropdown-detail-8" data-toggle="detail-8">
+							                    <div class="col-10">
+							                        Firebird
+							                    </div>
+							                    <div class="col-2"><i class="fa fa-chevron-up float-right"></i></div>
+							                </div>
+							                <div id="detail-8">
+							                    <hr>
+							                    <div class="container box-conhecimento">
+							                        <div class="fluid-row">
+							                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
+							                        		<h5><strong>O que é?</strong></h5>
+							                            	<p>O Firebird é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface.</p>
+							                            	<h5><strong>Experiência:</strong></h5>
+							                            	<p>Consultas avançadas é simples, inserção, remoção, atualização de dados.</p>	
+							                        	</div>
+							                        </div>
+							                    </div>
+							                </div>
+							            </li><!--end li-->
+							        </ul><!--end ul-->
+							    </div>
+						    </div>
+						</div><!--end card-->
+					</div><!--end col -->
+					<div class="col-md-6 col-sm-6 col-xl-6 col-lg-6">
+						<div class="card">
+						    <div class="card-header" role="tab" id="header-4">
+						      	<h5 class="mb-0">
+						      		<h3 class="card-title collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
 										Delphi
-										<span class="pull-right pressionado"><i class="glyphicon glyphicon-chevron-up"></i></span>
-										</h3>
-									</div>
-									<div class="panel-body">
-										<ul class="list-group">
-											<!--Item 10 detail-10 Versão 7-->
-								            <li class="list-group-item">
-								                <div class="row toggle" id="dropdown-detail-10" data-toggle="detail-10">
-								                    <div class="col-md-10 col-sm-10 col-xl-10 col-lg-10">
-								                        Versão 7
-								                    </div>
-								                    <div class="col-md-2 col-sm-2 col-xl-2 col-lg-2"><i class="fa fa-chevron-down pull-right"></i></div>
-								                </div>
-								                <div id="detail-10">
-								                    <hr>
-								                    <div class="container box-conhecimento">
-								                        <div class="fluid-row">
-								                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
-								                        		<h5><strong>O que é?</strong></h5>
-								                            	<p>Versão da linguagem de desenvolvimento Delphi com maior estabilidade em relação as anteriores, e a implementação para framework .NET v2.0, última versão desenvolvida pela Borland.</p>
-								                            	<h5><strong>Experiência:</strong></h5>
-								                            	<p>Correção de problemas em um sistema ERP desenvolvido em Delphi.</p>	
-								                        	</div>
-								                        </div>
-								                    </div>
-								                </div><!--end detail-->
-								            </li><!--end li-->
-								            <!--Item 11 detail-11 Embarcadero XE2-->
-								            <li class="list-group-item">
-								                <div class="row toggle" id="dropdown-detail-11" data-toggle="detail-11">
-								                    <div class="col-md-10 col-sm-10 col-xl-10 col-lg-10">
-								                        Embarcadero XE2
-								                    </div>
-								                    <div class="col-md-2 col-sm-2 col-xl-2 col-lg-2"><i class="fa fa-chevron-down pull-right"></i></div>
-								                </div>
-								                <div id="detail-11">
-								                    <hr>
-								                    <div class="container box-conhecimento">
-								                        <div class="fluid-row">
-								                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
-								                        		<h5><strong>O que é?</strong></h5>
-								                            	<p>Versão da linguagem de desenvolvimento Delphi desenvolvida pela Codegear, com novas funções e uma IDE com novas funcionalidades.</p>
-								                            	<h5><strong>Experiência:</strong></h5>
-								                            	<p>Desenvolvimento orientado a objetos de métodos e classes para um sistema EPR, manipulação de dados para geração de relatórios é a criação de interfaces do sistema.</p>	
-								                        	</div>
-								                        </div>
-								                    </div>
-								                </div><!--end detail-->
-								            </li><!--end li-->
-								            <!--Item 12 detail-12 FastReport-->
-								            <li class="list-group-item">
-								                <div class="row toggle" id="dropdown-detail-12" data-toggle="detail-12">
-								                    <div class="col-md-10 col-sm-10 col-xl-10 col-lg-10">
-								                        FastReport
-								                    </div>
-								                    <div class="col-md-2 col-sm-2 col-xl-2 col-lg-2"><i class="fa fa-chevron-down pull-right"></i></div>
-								                </div>
-								                <div id="detail-12">
-								                    <hr>
-								                    <div class="container box-conhecimento">
-								                        <div class="fluid-row">
-								                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
-								                        		<h5><strong>O que é?</strong></h5>
-								                            	<p>É um gerador de relatório e ferramentas de relatório para Delphi.</p>
-								                            	<h5><strong>Experiência:</strong></h5>
-								                            	<p>Desenvolvimento de relátorios envolvendo informações de um sistema ERP, correção de erros em relatórios em produção, implementação de novas funções em relatórios.</p>	
-								                        	</div>
-								                        </div>
-								                    </div>
-								                </div><!--end detail-->
-								            </li><!--end li-->
-								        </ul><!--end ul-->
-									</div>
-								</div><!--end panel-->
-							</div><!--end col -->
-						</div><!--end row-->
-						<div class="row">
-							<div class="col-md-6 col-sm-6 col-xl-6 col-lg-6">
-								<div class="panel panel-primary">
-									<div class="panel-heading">
-										<h3 class="panel-title">
+										<span class="float-right"><i class="fa fa-chevron-up"></i></span>
+									</h3>
+						      	</h5>
+						    </div>
+						    <div id="collapse-4" class="collapse" role="tabcard" aria-labelledby="header-4">
+							    <div class="card-block">
+							      	<ul class="list-group m-2">
+							            <li class="list-group-item">
+							                <div class="row toggle" id="dropdown-detail-9" data-toggle="detail-9">
+							                    <div class="col-10">
+							                        Versão 7
+							                    </div>
+							                    <div class="col-2"><i class="fa fa-chevron-up float-right"></i></div>
+							                </div>
+							                <div id="detail-9">
+							                    <hr>
+							                    <div class="container box-conhecimento">
+							                        <div class="fluid-row">
+							                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
+							                        		<h5><strong>O que é?</strong></h5>
+							                            	<p>Versão da linguagem de desenvolvimento Delphi com maior estabilidade em relação as anteriores, e a implementação para framework .NET v2.0, última versão desenvolvida pela Borland.</p>
+							                            	<h5><strong>Experiência:</strong></h5>
+							                            	<p>Correção de problemas em um sistema ERP desenvolvido em Delphi.</p>	
+							                        	</div>
+							                        </div>
+							                    </div>
+							                </div>
+							            </li><!--end li-->
+							            <li class="list-group-item">
+							                <div class="row toggle" id="dropdown-detail-10" data-toggle="detail-10">
+							                    <div class="col-10">
+							                        Embarcadero XE2
+							                    </div>
+							                    <div class="col-2"><i class="fa fa-chevron-up float-right"></i></div>
+							                </div>
+							                <div id="detail-10">
+							                    <hr>
+							                    <div class="container box-conhecimento">
+							                        <div class="fluid-row">
+							                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
+							                        		<h5><strong>O que é?</strong></h5>
+							                            	<p>Versão da linguagem de desenvolvimento Delphi desenvolvida pela Codegear, com novas funções e uma IDE com novas funcionalidades.</p>
+							                            	<h5><strong>Experiência:</strong></h5>
+							                            	<p>Desenvolvimento orientado a objetos de métodos e classes para um sistema EPR, manipulação de dados para geração de relatórios é a criação de interfaces do sistema.</p>	
+							                        	</div>
+							                        </div>
+							                    </div>
+							                </div>
+							            </li><!--end li-->
+							            <li class="list-group-item">
+							                <div class="row toggle" id="dropdown-detail-11" data-toggle="detail-11">
+							                    <div class="col-10">
+							                        FastReport
+							                    </div>
+							                    <div class="col-2"><i class="fa fa-chevron-up float-right"></i></div>
+							                </div>
+							                <div id="detail-11">
+							                    <hr>
+							                    <div class="container box-conhecimento">
+							                        <div class="fluid-row">
+							                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
+							                        		<h5><strong>O que é?</strong></h5>
+							                            	<p>É um gerador de relatório e ferramentas de relatório para Delphi.</p>
+							                            	<h5><strong>Experiência:</strong></h5>
+							                            	<p>Desenvolvimento de relátorios envolvendo informações de um sistema ERP, correção de erros em relatórios em produção, implementação de novas funções em relatórios.</p>
+							                        	</div>
+							                        </div>
+							                    </div>
+							                </div>
+							            </li><!--end li-->
+							        </ul><!--end ul-->
+							    </div>
+						    </div>
+						</div><!--end card-->
+					</div><!--end col -->
+				</div><!--end row-->
+				<div class="row p-2 m-4">
+					<div class="col-md-6 col-sm-6 col-xl-6 col-lg-6">
+						<div class="card">
+						    <div class="card-header" role="tab" id="header-5">
+						      	<h5 class="mb-0">
+						      		<h3 class="card-title collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
 										PHP
-										<span class="pull-right pressionado"><i class="glyphicon glyphicon-chevron-up"></i></span>
-										</h3>
-									</div>
-									<div class="panel-body">
-										<ul class="list-group">
-											<!--Item 13 detail-13 -->
-								            <li class="list-group-item">
-								                <div class="row toggle" id="dropdown-detail-13" data-toggle="detail-13">
-								                    <div class="col-xs-10">
-								                        PHP OO
-								                    </div>
-								                    <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
-								                </div>
-								                <div id="detail-13">
-								                    <hr>
-								                    <div class="container box-conhecimento">
-								                        <div class="fluid-row">
-								                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
-								                        		<h5><strong>O que é?</strong></h5>
-								                            	<p>O PHP é uma linguagem de script open source de uso geral, muito utilizada, e especialmente adequada para o desenvolvimento web e que pode ser embutida dentro do HTML, com processamento Server-Side.</p>
-								                            	<h5><strong>Experiência:</strong></h5>
-								                            	<p>Desenvolvimento orientado a objetos, manipulação de informações geoespaciais do banco de dados, criação de sessões de acesso, validação de usuário.</p>	
-								                        	</div>
-								                        </div>
-								                    </div>
-								                </div><!--end detail-->
-								            </li><!--end li-->
-								        </ul><!--end ul-->
-									</div>
-								</div><!--end panel-->
-							</div><!--end col-->
-							<div class="col-md-6 col-sm-6 col-xl-6 col-lg-6">
-								<div class="panel panel-primary">
-									<div class="panel-heading">
-										<h3 class="panel-title">
+										<span class="float-right"><i class="fa fa-chevron-up"></i></span>
+									</h3>
+						      	</h5>
+						    </div>
+						    <div id="collapse-5" class="collapse" role="tabcard" aria-labelledby="header-5">
+							    <div class="card-block">
+							      	<ul class="list-group m-2">
+							            <li class="list-group-item">
+							                <div class="row toggle" id="dropdown-detail-12" data-toggle="detail-12">
+							                    <div class="col-10">
+							                        PHP OO
+							                    </div>
+							                    <div class="col-2"><i class="fa fa-chevron-up float-right"></i></div>
+							                </div>
+							                <div id="detail-12">
+							                    <hr>
+							                    <div class="container box-conhecimento">
+							                        <div class="fluid-row">
+							                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
+							                        		<h5><strong>O que é?</strong></h5>
+							                            	<p>O PHP é uma linguagem de script open source de uso geral, muito utilizada, e especialmente adequada para o desenvolvimento web e que pode ser embutida dentro do HTML, com processamento Server-Side.</p>
+							                            	<h5><strong>Experiência:</strong></h5>
+							                            	<p>Desenvolvimento orientado a objetos, manipulação de informações geoespaciais do banco de dados, criação de sessões de acesso, validação de usuário.</p>	
+							                        	</div>
+							                        </div>
+							                    </div>
+							                </div>
+							            </li><!--end li-->
+							        </ul><!--end ul-->
+							    </div>
+						    </div>
+						</div><!--end card-->
+					</div><!--end col -->
+					<div class="col-md-6 col-sm-6 col-xl-6 col-lg-6">
+						<div class="card">
+						    <div class="card-header" role="tab" id="header-6">
+						      	<h5 class="mb-0">
+						      		<h3 class="card-title collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-6" aria-expanded="false" aria-controls="collapse-6">
 										CSS
-										<span class="pull-right pressionado"><i class="glyphicon glyphicon-chevron-up"></i></span>
-										</h3>
-									</div>
-									<div class="panel-body">
-										<ul class="list-group">
-											<!--Item 15 detail-15 CSS-->
-								            <li class="list-group-item">
-								                <div class="row toggle" id="dropdown-detail-15" data-toggle="detail-15">
-								                    <div class="col-md-10 col-sm-10 col-xl-10 col-lg-10">
-								                        CSS
-								                    </div>
-								                    <div class="col-md-2 col-sm-2 col-xl-2 col-lg-2"><i class="fa fa-chevron-down pull-right"></i></div>
-								                </div>
-								                <div id="detail-15">
-								                    <hr>
-								                    <div class="container box-conhecimento">
-								                        <div class="fluid-row">
-								                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
-								                        		<h5><strong>O que é?</strong></h5>
-								                            	<p>CSS ou Cascading Style Sheets é uma linguagem de estilização para especificar como os documentos são apresentados aos usuários.</p>
-								                            	<h5><strong>Experiência:</strong></h5>
-								                            	<p>Estilização de páginas, manipulação da estrutura e organização dos elementos em páginas Web.</p>	
-								                        	</div>
-								                        </div>
-								                    </div>
-								                </div>
-								            </li><!--end li-->
-								            <!--Item 16 detail-16 CSS3-->
-								            <li class="list-group-item">
-								                <div class="row toggle" id="dropdown-detail-16" data-toggle="detail-16">
-								                    <div class="col-md-10 col-sm-10 col-xl-10 col-lg-10">
-								                        CSS3
-								                    </div>
-								                    <div class="col-md-2 col-sm-2 col-xl-2 col-lg-2"><i class="fa fa-chevron-down pull-right"></i></div>
-								                </div>
-								                <div id="detail-16">
-								                    <hr>
-								                    <div class="container box-conhecimento">
-								                        <div class="fluid-row">
-								                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
-								                        		<h5><strong>O que é?</strong></h5>
-								                            	<p>CSS ou Cascading Style Sheets é uma linguagem de estilização para especificar como os documentos são apresentados aos usuários, em sua versão três que trás novas tags e funcionalidades de estilização.</p>
-								                            	<h5><strong>Experiência:</strong></h5>
-								                            	<p>Utilização de novos eventos, como sombra, transições, rotação de elementos, animações entre outras técnicas que o CSS 3 possibilita. </p>	
-								                        	</div>
-								                        </div>
-								                    </div>
-								                </div>
-								            </li><!--end li-->
-								        </ul><!--end ul-->
-									</div>
-								</div><!--end panel-->
-							</div><!--end col-->
-						</div><!--end row-->
-						<div class="row">
-							<div class="col-md-6 col-sm-6 col-xl-6 col-lg-6">
-								<div class="panel panel-primary">
-									<div class="panel-heading">
-										<h3 class="panel-title">
+										<span class="float-right"><i class="fa fa-chevron-up"></i></span>
+									</h3>
+						      	</h5>
+						    </div>
+						    <div id="collapse-6" class="collapse" role="tabcard" aria-labelledby="header-6">
+							    <div class="card-block">
+							      	<ul class="list-group m-2">
+							            <li class="list-group-item">
+							                <div class="row toggle" id="dropdown-detail-13" data-toggle="detail-13">
+							                    <div class="col-10">
+							                        CSS
+							                    </div>
+							                    <div class="col-2"><i class="fa fa-chevron-up float-right"></i></div>
+							                </div>
+							                <div id="detail-13">
+							                    <hr>
+							                    <div class="container box-conhecimento">
+							                        <div class="fluid-row">
+							                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
+							                        		<h5><strong>O que é?</strong></h5>
+							                            	<p>CSS ou Cascading Style Sheets é uma linguagem de estilização para especificar como os documentos são apresentados aos usuários.</p>
+							                            	<h5><strong>Experiência:</strong></h5>
+							                            	<p>Estilização de páginas, manipulação da estrutura e organização dos elementos em páginas Web.</p>	
+							                        	</div>
+							                        </div>
+							                    </div>
+							                </div>
+							            </li><!--end li-->
+							            <li class="list-group-item">
+							                <div class="row toggle" id="dropdown-detail-14" data-toggle="detail-14">
+							                    <div class="col-10">
+							                        CSS3
+							                    </div>
+							                    <div class="col-2"><i class="fa fa-chevron-up float-right"></i></div>
+							                </div>
+							                <div id="detail-14">
+							                    <hr>
+							                    <div class="container box-conhecimento">
+							                        <div class="fluid-row">
+							                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
+							                        		<h5><strong>O que é?</strong></h5>
+							                            	<p>CSS ou Cascading Style Sheets é uma linguagem de estilização para especificar como os documentos são apresentados aos usuários, em sua versão três que trás novas tags e funcionalidades de estilização.</p>
+							                            	<h5><strong>Experiência:</strong></h5>
+							                            	<p>Utilização de novos eventos, como sombra, transições, rotação de elementos, animações entre outras técnicas que o CSS 3 possibilita.</p>	
+							                        	</div>
+							                        </div>
+							                    </div>
+							                </div>
+							            </li><!--end li-->
+							        </ul><!--end ul-->
+							    </div>
+						    </div>
+						</div><!--end card-->
+					</div><!--end col -->
+				</div><!--end row-->
+				<div class="row p-2 m-4">
+					<div class="col-md-6 col-sm-6 col-xl-6 col-lg-6">
+						<div class="card">
+						    <div class="card-header" role="tab" id="header-7">
+						      	<h5 class="mb-0">
+						      		<h3 class="card-title collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-7" aria-expanded="false" aria-controls="collapse-7">
 										HTML
-										<span class="pull-right pressionado"><i class="glyphicon glyphicon-chevron-up"></i></span>
-										</h3>
-									</div>
-									<div class="panel-body">
-										<ul class="list-group">
-											<!--Item 17 detail-17 HTML, XHTML-->
-								            <li class="list-group-item">
-								                <div class="row toggle" id="dropdown-detail-17" data-toggle="detail-17">
-								                    <div class="col-xs-10">
-								                        HTML, XHTML
-								                    </div>
-								                    <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
-								                </div>
-								                <div id="detail-17">
-								                    <hr>
-								                    <div class="container box-conhecimento">
-								                        <div class="fluid-row">
-								                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
-								                        		<h5><strong>O que é?</strong></h5>
-								                            	<p>HTML ou HyperText Markup Language, que significa Linguagem de Marcação de Hipertexto é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores.</p>
-								                            	<p>O XHTML, ou eXtensible Hypertext Markup Language, é uma reformulação da linguagem de marcação HTML baseada em XML. Combina as tags de marcação HTML com regras da XML.</p>
-								                            	<h5><strong>Experiência:</strong></h5>
-								                            	<p>Construção e manutenção de páginas.</p>	
-								                        	</div>
-								                        </div>
-								                    </div>
-								                </div>
-								            </li><!--end li-->
-								            <!--Item 18 detail-18 HTML5-->
-								            <li class="list-group-item">
-								                <div class="row toggle" id="dropdown-detail-18" data-toggle="detail-18">
-								                    <div class="col-xs-10">
-								                        HTML5
-								                    </div>
-								                    <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
-								                </div>
-								                <div id="detail-18">
-								                    <hr>
-								                    <div class="container box-conhecimento">
-								                        <div class="fluid-row">
-								                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
-								                        		<h5><strong>O que é?</strong></h5>
-								                            	<p>HTML5 é a mais recente evolução do padrão que define o HTML. O termo representa dois conceitos diferentes: É uma nova versão da linguagem HTML, com novos elementos, atributos, e comportamentos. É um conjunto maior de tecnologias que permite o desenvolvimento de aplicações e web sites mais diversos e poderosos, com melhor semântica para os interpretadores dos Browser, é que possibilita melhor posicionamento com tecnícas de SEO(Search Engine Optimization).</p>
-								                            	<h5><strong>Experiência:</strong></h5>
-								                            	<p>Construção é manutenção de páginas web utilizando as novas tags do HTML5, para melhor semântica e posicionamento entre os buscadores.</p>	
-								                        	</div>
-								                        </div>
-								                    </div>
-								                </div>
-								            </li><!--end li-->
-								        </ul><!--end ul-->
-									</div>
-								</div><!--end panel-->
-							</div><!--end col-->
-							<div class="col-md-6 col-sm-6 col-xl-6 col-lg-6">
-								<div class="panel panel-primary">
-									<div class="panel-heading">
-										<h3 class="panel-title">
+										<span class="float-right"><i class="fa fa-chevron-up"></i></span>
+									</h3>
+						      	</h5>
+						    </div>
+						    <div id="collapse-7" class="collapse" role="tabcard" aria-labelledby="header-7">
+							    <div class="card-block">
+							      	<ul class="list-group m-2">
+							            <li class="list-group-item">
+							                <div class="row toggle" id="dropdown-detail-15" data-toggle="detail-15">
+							                    <div class="col-10">
+							                        HTML, XHTML
+							                    </div>
+							                    <div class="col-2"><i class="fa fa-chevron-up float-right"></i></div>
+							                </div>
+							                <div id="detail-15">
+							                    <hr>
+							                    <div class="container box-conhecimento">
+							                        <div class="fluid-row">
+							                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
+							                        		<h5><strong>O que é?</strong></h5>
+							                            	<p>HTML ou HyperText Markup Language, que significa Linguagem de Marcação de Hipertexto é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores.
+
+															O XHTML, ou eXtensible Hypertext Markup Language, é uma reformulação da linguagem de marcação HTML baseada em XML. Combina as tags de marcação HTML com regras da XML.</p>
+							                            	<h5><strong>Experiência:</strong></h5>
+							                            	<p>Construção e manutenção de páginas.</p>	
+							                        	</div>
+							                        </div>
+							                    </div>
+							                </div>
+							            </li><!--end li-->
+							            <li class="list-group-item">
+							                <div class="row toggle" id="dropdown-detail-16" data-toggle="detail-16">
+							                    <div class="col-10">
+							                        HTML5
+							                    </div>
+							                    <div class="col-2"><i class="fa fa-chevron-up float-right"></i></div>
+							                </div>
+							                <div id="detail-16">
+							                    <hr>
+							                    <div class="container box-conhecimento">
+							                        <div class="fluid-row">
+							                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
+							                        		<h5><strong>O que é?</strong></h5>
+							                            	<p>HTML5 é a mais recente evolução do padrão que define o HTML. O termo representa dois conceitos diferentes: É uma nova versão da linguagem HTML, com novos elementos, atributos, e comportamentos. É um conjunto maior de tecnologias que permite o desenvolvimento de aplicações e web sites mais diversos e poderosos, com melhor semântica para os interpretadores dos Browser, é que possibilita melhor posicionamento com tecnícas de SEO(Search Engine Optimization).</p>
+							                            	<h5><strong>Experiência:</strong></h5>
+							                            	<p>Construção é manutenção de páginas web utilizando as novas tags do HTML5, para melhor semântica e posicionamento entre os buscadores.</p>	
+							                        	</div>
+							                        </div>
+							                    </div>
+							                </div>
+							            </li><!--end li-->
+							        </ul><!--end ul-->
+							    </div>
+						    </div>
+						</div><!--end card-->
+					</div><!--end col -->
+					<div class="col-md-6 col-sm-6 col-xl-6 col-lg-6">
+						<div class="card">
+						    <div class="card-header" role="tab" id="header-8">
+						      	<h5 class="mb-0">
+						      		<h3 class="card-title collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-8" aria-expanded="false" aria-controls="collapse-8">
 										FrameWorks Fron-End
-										<span class="pull-right pressionado"><i class="glyphicon glyphicon-chevron-up"></i></span>
-										</h3>
-									</div>
-									<div class="panel-body">
-										<ul class="list-group">
-											<!--Item 20 detail-20 DynaTable-->
-								            <li class="list-group-item">
-								                <div class="row toggle" id="dropdown-detail-20" data-toggle="detail-20">
-								                    <div class="col-md-10 col-sm-10 col-xl-10 col-lg-10">
-								                        DynaTable
-								                    </div>
-								                    <div class="col-md-2 col-sm-2 col-xl-2 col-lg-2"><i class="fa fa-chevron-down pull-right"></i></div>
-								                </div>
-								                <div id="detail-20">
-								                    <hr>
-								                    <div class="container box-conhecimento">
-								                        <div class="fluid-row">
-								                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
-								                        		<h5><strong>O que é?</strong></h5>
-								                            	<p>Dynatable é um plugin Javascript para a criação de tabelas com HTML5, JSON é Jquery, o que facilita a manipulação de elementos, e a criação de tabelas dinamicamente.</p>
-								                            	<h5><strong>Experiência:</strong></h5>
-								                            	<p>Criação, alimentação de dados com JSON, e manipulação de informações em tabelas dinâmicas.</p>	
-								                        	</div>
-								                        </div>
-								                    </div>
-								                </div>
-								            </li><!--end li-->
-								            <!--Item 21 detail-21 DynaTable-->
-								            <li class="list-group-item">
-								                <div class="row toggle" id="dropdown-detail-21" data-toggle="detail-21">
-								                    <div class="col-md-10 col-sm-10 col-xl-10 col-lg-10">
-								                        Bootstrap 3, 4
-								                    </div>
-								                    <div class="col-md-2 col-sm-2 col-xl-2 col-lg-2"><i class="fa fa-chevron-down pull-right"></i></div>
-								                </div>
-								                <div id="detail-21">
-								                    <hr>
-								                    <div class="container box-conhecimento">
-								                        <div class="fluid-row">
-								                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
-								                        		<h5><strong>O que é?</strong></h5>
-								                            	<p>Bootstrap é um web framework front-end de código-fonte aberto para a concepção de websites e aplicações web, utilizando o conceito de sites responsivos, ou seja, conseguem se adaptar para o tamanho de diversos dispositivos, com classes CSS predefinidas que facilitam no desenvolvimentos de páginas WEB.</p>
-								                            	<h5><strong>Experiência:</strong></h5>
-								                            	<p>Desenvolvimento responsivo, utilização de boa parte dos componentes disponivéis na versão 3 é 4.</p>	
-								                        	</div>
-								                        </div>
-								                    </div>
-								                </div>
-								            </li><!--end li-->
-								            <!--Item 22 detail-22 Leaflet-->
-								            <li class="list-group-item">
-								                <div class="row toggle" id="dropdown-detail-22" data-toggle="detail-22">
-								                    <div class="col-md-10 col-sm-10 col-xl-10 col-lg-10">
-								                        Leaflet
-								                    </div>
-								                    <div class="col-md-2 col-sm-2 col-xl-2 col-lg-2"><i class="fa fa-chevron-down pull-right"></i></div>
-								                </div>
-								                <div id="detail-22">
-								                    <hr>
-								                    <div class="container box-conhecimento">
-								                        <div class="fluid-row">
-								                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
-								                        		<h5><strong>O que é?</strong></h5>
-								                            	<p>Leaflet é a principal biblioteca de Javascript de código aberto para mapas interativos amigáveis para dispositivos móveis é desktop em páginas WEB. Uma biblioteca simples, com desenpenho e usuabilidade.</p>
-								                            	<h5><strong>Experiência:</strong></h5>
-								                            	<p>Elaboração de mapas interativos, manipulação de dados geoespaciais, desenvolvimento de novas funções e eventos em mapas interativos.</p>	
-								                        	</div>
-								                        </div>
-								                    </div>
-								                </div>
-								            </li><!--end li-->
-								            <!--Item 23 detail-23 ChartJS-->
-								            <li class="list-group-item">
-								                <div class="row toggle" id="dropdown-detail-23" data-toggle="detail-23">
-								                    <div class="col-md-10 col-sm-10 col-xl-10 col-lg-10">
-								                        ChartJS
-								                    </div>
-								                    <div class="col-md-2 col-sm-2 col-xl-2 col-lg-2"><i class="fa fa-chevron-down pull-right"></i></div>
-								                </div>
-								                <div id="detail-23">
-								                    <hr>
-								                    <div class="container box-conhecimento">
-								                        <div class="fluid-row">
-								                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
-								                        		<h5><strong>O que é?</strong></h5>
-								                            	<p>E uma biblioteca Javascript simples, para criação é manipulação de gráficos interativos e responsivos.</p>
-								                            	<h5><strong>Experiência:</strong></h5>
-								                            	<p>Criação de gráficos interativos, manipulação de dados, elaboração de Dashboards.</p>	
-								                        	</div>
-								                        </div>
-								                    </div>
-								                </div>
-								            </li><!--end li-->
-								            <!--GOOGLE MAPS API JAVASCRIPT-->
-								        </ul><!--end ul-->
-									</div>
-								</div><!--end panel-->
-							</div><!--end col-->
-						</div><!--end row-->
-					</div>
-				</section>
-			</div><!--end área conhecimento-->
-		</main>
-		<footer>
-			<div class="row" id="contato">
-				<section>
-					<div class="row">
-						<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
-							<div class="page-header">
-						        <h1 id="timeline">Contato</h1>
-						    </div>							
-						</div>
-					</div>
-					<div class="col-md-6 col-sm-6 col-xl-6 col-lg-6 form-line">
-						<div class="sucess_box">
-							<span class="success_mensage">
-								<i class="glyphicon glyphicon-check"></i> Sua mensagem foi enviada com sucesso!
-							</span>
-						</div>
-				      	<!-- jquery validation plugin & jquery mask plugin-->
-						<form id="formContato" role="form" action="#" method="POST">
-							<fieldset>
-					  			<div class="form-group">
-					  				<label for="nome">Nome</label>
-							    	<input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome..." required="required" />
-						  		</div>
-						  		<div class="form-group">
-							    	<label for="telefone">Número / Whatsapp (opcional)</label>
-							    	<input type="tel" class="form-control" id="telefone" name="telefone" />
-					  			</div>
-						  		<div class="form-group">
-							    	<label for="email" class="control-label">Email</label>
-							    	<input type="email" class="form-control" id="email" name="email" required="required" placeholder="Seu email..." />
-							  	</div>
-							  	<div class="form-group">
-					  				<label for="assunto">Assunto</label>
-							    	<input type="text" class="form-control" id="assunto" name="assunto" placeholder="Por favor, informe do que se trata." required="required" />
-						  		</div>
-							  	<div class="form-group">
-					  				<label for="mensagem">Mensagem</label>
-					  			 	<textarea  class="form-control" id="mensagem" name="mensagem" placeholder="Sua mensagem..." required="required" wrap='off' rows="6" cols="200"></textarea>
-					  			</div>
-					  			<div>
-					  				<label for="btnEnviar"></label>
-					  				<button type="submit" class="btn btn-default pull-right" id="btnEnviar" value="Enviar"><i class="fa fa-paper-plane" aria-hidden="true"></i> Enviar Mensagem</button>
-					  			</div>
-					  		</fieldset>
-						</form>
-					</div>
-			  		<div class="col-md-6 col-sm-6 col-xl-6 col-lg-6">
-			  			<div class="contato-right">
-			  				<h3>Jeferson P. da Silva</h3>
-			  				<h4>Desenvolvedor Web Java Júnior | Desenvolvedor PHP Júnior</h4>
-			  				<p>Entre em contato, respondo o mais rápido possível.</p>
-			  				<span><i class="fa fa-github-square fa-2x"></i> https://github.com/JefersonPSilva</span>
-				  			<br>
-				  			<span><i class="fa fa-envelope fa-2x"></i> jeferson_p.silva@outlook.com</span>
-				  			<br>
-				  			<span><i class="fa fa-google-plus-square fa-2x"></i> jefersonp.silv4@gmail.com</span>
-				  			<br>
-				  			<br>
-				  			<p>Ou você pode enviar uma mensagem usando o formulário de contato!</p>
+										<span class="float-right"><i class="fa fa-chevron-up"></i></span>
+									</h3>
+						      	</h5>
+						    </div>
+						    <div id="collapse-8" class="collapse" role="tabcard" aria-labelledby="header-8">
+							    <div class="card-block">
+							      	<ul class="list-group m-2">
+							            <li class="list-group-item">
+							                <div class="row toggle " id="dropdown-detail-17" data-toggle="detail-17">
+							                    <div class="col-10" >
+							                        DynaTable
+							                    </div>
+							                    <div class="col-2"><i class="fa fa-chevron-up float-right"></i></div>
+							                </div>
+							                <div id="detail-17">
+							                    <hr>
+							                    <div class="container box-conhecimento">
+							                        <div class="fluid-row">
+							                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
+							                        		<h5><strong>O que é?</strong></h5>
+							                            	<p>Dynatable é um plugin Javascript para a criação de tabelas com HTML5, JSON é Jquery, o que facilita a manipulação de elementos, e a criação de tabelas dinamicamente.</p>
+							                            	<h5><strong>Experiência:</strong></h5>
+							                            	<p>Criação, alimentação de dados com JSON, e manipulação de informações em tabelas dinâmicas.</p>	
+							                        	</div>
+							                        </div>
+							                    </div>
+							                </div>
+							            </li><!--end li-->
+							            <li class="list-group-item">
+							                <div class="row toggle" id="dropdown-detail-18" data-toggle="detail-18">
+							                    <div class="col-10">
+							                        Bootstrap 3,4
+							                    </div>
+							                    <div class="col-2"><i class="fa fa-chevron-up float-right"></i></div>
+							                </div>
+							                <div id="detail-18">
+							                    <hr>
+							                    <div class="container box-conhecimento">
+							                        <div class="fluid-row">
+							                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
+							                        		<h5><strong>O que é?</strong></h5>
+							                            	<p>Bootstrap é um web framework front-end de código-fonte aberto para a concepção de websites e aplicações web, utilizando o conceito de sites responsivos, ou seja, conseguem se adaptar para o tamanho de diversos dispositivos, com classes CSS predefinidas que facilitam no desenvolvimentos de páginas WEB.</p>
+							                            	<h5><strong>Experiência:</strong></h5>
+							                            	<p>Desenvolvimento responsivo, utilização de boa parte dos componentes disponivéis na versão 3 é 4.</p>	
+							                        	</div>
+							                        </div>
+							                    </div>
+							                </div>
+							            </li><!--end li-->
+							            <li class="list-group-item">
+							                <div class="row toggle" id="dropdown-detail-19" data-toggle="detail-19">
+							                    <div class="col-10">
+							                        Leaflet
+							                    </div>
+							                    <div class="col-2"><i class="fa fa-chevron-up float-right"></i></div>
+							                </div>
+							                <div id="detail-19">
+							                    <hr>
+							                    <div class="container box-conhecimento">
+							                        <div class="fluid-row">
+							                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
+							                        		<h5><strong>O que é?</strong></h5>
+							                            	<p>Leaflet é a principal biblioteca de Javascript de código aberto para mapas interativos amigáveis para dispositivos móveis é desktop em páginas WEB. Uma biblioteca simples, com desenpenho e usuabilidade.</p>
+							                            	<h5><strong>Experiência:</strong></h5>
+							                            	<p>Elaboração de mapas interativos, manipulação de dados geoespaciais, desenvolvimento de novas funções e eventos em mapas interativos.</p>
+							                        	</div>
+							                        </div>
+							                    </div>
+							                </div>
+							            </li><!--end li-->
+							            <li class="list-group-item">
+							                <div class="row toggle" id="dropdown-detail-20" data-toggle="detail-20">
+							                    <div class="col-10">
+							                        ChartJS
+							                    </div>
+							                    <div class="col-2"><i class="fa fa-chevron-up float-right"></i></div>
+							                </div>
+							                <div id="detail-20">
+							                    <hr>
+							                    <div class="container box-conhecimento">
+							                        <div class="fluid-row">
+							                        	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
+							                        		<h5><strong>O que é?</strong></h5>
+							                            	<p>E uma biblioteca Javascript simples, para criação é manipulação de gráficos interativos e responsivos.</p>
+							                            	<h5><strong>Experiência:</strong></h5>
+							                            	<p>Criação de gráficos interativos, manipulação de dados, elaboração de Dashboards.</p>
+							                        	</div>
+							                        </div>
+							                    </div>
+							                </div>
+							            </li><!--end li-->
+							        </ul><!--end ul-->
+							    </div>
+						    </div>
+						</div><!--end card-->
+					</div><!--end col -->
+				</div><!--end row-->
+			</div>
+		</div>
+	</section><!--end seção conhecimento-->
+	<footer class="container-fluid bg-contato text-white" id="contato">
+		<p class="h1 pt-3">CONTATO</p>
+		<hr class="hr-one">
+		<div class="row">
+			<div class="col-md-6 col-sm-6 col-xl-6 col-lg-6 form-line">
+				<div class="sucess_box">
+					<span class="success_mensage">
+						<i class="glyphicon glyphicon-check"></i> Sua mensagem foi enviada com sucesso!
+					</span>
+				</div>
+		      	<!-- jquery validation plugin & jquery mask plugin-->
+				<form id="formContato" role="form" action="#" method="POST">
+					<fieldset class="box-shadow p-2">
+			  			<div class="form-group">
+			  				<label for="nome">Nome</label>
+					    	<input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome..." required="required" />
+				  		</div>
+				  		<div class="form-group">
+					    	<label for="telefone">Número / Whatsapp (opcional)</label>
+					    	<input type="tel" class="form-control" id="telefone" name="telefone" />
 			  			</div>
-					</div>
-				</section>
-			</div><!--end área contato-->
-		</footer>
-	</div>
+				  		<div class="form-group">
+					    	<label for="email" class="control-label">Email</label>
+					    	<input type="email" class="form-control" id="email" name="email" required="required" placeholder="Seu email..." />
+					  	</div>
+					  	<div class="form-group">
+			  				<label for="assunto">Assunto</label>
+					    	<input type="text" class="form-control" id="assunto" name="assunto" placeholder="Por favor, informe do que se trata." required="required" />
+				  		</div>
+					  	<div class="form-group">
+			  				<label for="mensagem">Mensagem</label>
+			  			 	<textarea  class="form-control" id="mensagem" name="mensagem" placeholder="Sua mensagem..." required="required" wrap='off' rows="4" cols="200"></textarea>
+			  			</div>
+			  			<div>
+			  				<label for="btnEnviar"></label>
+			  				<button type="submit" class="btn btn-default float-right" id="btnEnviar" value="Enviar"><i class="fa fa-paper-plane" aria-hidden="true"></i> Enviar Mensagem</button>
+			  			</div>
+			  		</fieldset>
+				</form>
+			</div>
+	  		<div class="col-md-6 col-sm-6 col-xl-6 col-lg-6 align-items-center">
+	  			<div>
+	  				<ul>
+		  				<li class="titulo">Jeferson P. da Silva</li>
+		  				<li class="subtitulo">Desenvolvedor Web Java Júnior | Desenvolvedor PHP Júnior</li>
+		  				<li class="texto-normal">Entre em contato, respondo o mais rápido possível.</li>
+	  				</ul>
+	  				<span class="texto-normal"><i class="fa fa-github-square fa-2x"></i> https://github.com/JefersonPSilva</span>
+		  			<br>
+		  			<span class="texto-normal"><i class="fa fa-envelope fa-2x"></i> jeferson_p.silva@outlook.com</span>
+		  			<br>
+		  			<span class="texto-normal"><i class="fa fa-google-plus-square fa-2x"></i> jefersonp.silv4@gmail.com</span>
+		  			<br>
+		  			<br>
+		  			<p class="texto-normal">Ou você pode enviar uma mensagem usando o formulário de contato!</p>
+	  			</div>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>

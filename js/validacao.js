@@ -64,7 +64,7 @@ $(function(){
                     notes: "https://jefersonpsilva.github.io/index.html"
                 });
                 $(".sucess_box").css("display", "block");
-                $("#nome").focus(); 
+                $("#formContato").trigger("reset");
             }
             return false;
         }
