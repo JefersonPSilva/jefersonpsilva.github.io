@@ -129,12 +129,15 @@
     font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
 }
 
-.timeline-body > p,
-.timeline-body > ul, 
+.timeline-body > p, 
 .timeline-body > h5{
     margin-bottom: 0;
     font-size: 15pt;
     font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+}
+
+.timeline-body > p{
+    text-align: justify;
 }
 
 .timeline-body > p + p {

@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	//Tecnica para scroll suave para link interno
-	$('.nav a[href^="#"]').on('click', function(e) {
+	$('.nav a[href^="#"], nav a[href^="#"').on('click', function(e) {
 		e.preventDefault();
 		var id = $(this).attr('href'),
 				targetOffset = $(id).offset().top;
